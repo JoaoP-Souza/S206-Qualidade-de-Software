@@ -1,0 +1,22 @@
+{
+  "name": "trabalho-ui",
+  "version": "1.0.0",
+  "description": "trabalho 1 da disciplina S206",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoP-Souza/S206-Qualidade-de-Software.git"
+  },
+  "author": "Joao Paulo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaoP-Souza/S206-Qualidade-de-Software/issues"
+  },
+  "homepage": "https://github.com/JoaoP-Souza/S206-Qualidade-de-Software#readme",
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.6.1"
+  }
+}
