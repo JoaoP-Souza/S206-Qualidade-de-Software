@@ -1,3 +1,5 @@
+OBS: Não realizei o trabalho em dupla
+
 Na pasta Trabalho UI:
 
   usa-se o comando NPM install (ou NPM i) para instalar as dependências do projeto
