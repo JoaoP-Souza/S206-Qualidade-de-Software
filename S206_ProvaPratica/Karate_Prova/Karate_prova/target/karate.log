@@ -1,0 +1,182 @@
+11:49:00.304 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:49:01.996 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:49:02.558 [main] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users/1
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:49:03.486 [main] DEBUG com.intuit.karate - response time in milliseconds: 868
+1 < 200
+1 < Date: Sun, 03 Dec 2023 14:49:02 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701538392&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=fWtQSBFHfQQERySfg0LIu6HRgxjhoRunnfKWg%2Bek2FQ%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701538392&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=fWtQSBFHfQQERySfg0LIu6HRgxjhoRunnfKWg%2Bek2FQ%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 996
+1 < X-Ratelimit-Reset: 1701538427
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: REVALIDATED
+1 < Server: cloudflare
+1 < CF-RAY: 82fc9d2dbf8b1b2e-GRU
+1 < alt-svc: h3=":443"; ma=86400
+{"website":"hildegard.org","address":{"zipcode":"92998-3874","geo":{"lng":"81.1496","lat":"-37.3159"},"suite":"Apt. 556","city":"Gwenborough","street":"Kulas Light"},"phone":"1-770-736-8031 x56442","name":"Leanne Graham","company":{"bs":"harness real-time e-markets","catchPhrase":"Multi-layered client-server neural-net","name":"Romaguera-Crona"},"id":1,"email":"Sincere@april.biz","username":"Bret"}
+11:49:03.572 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:49:03.611 [main] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/todos?userId=2
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:49:04.546 [main] DEBUG com.intuit.karate - response time in milliseconds: 934
+1 < 200
+1 < Date: Sun, 03 Dec 2023 14:49:03 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701614943&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=CKZGIayk3RKGgOkV6q71q%2FyEMJrOWF753n9AM6aX69o%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701614943&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=CKZGIayk3RKGgOkV6q71q%2FyEMJrOWF753n9AM6aX69o%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 998
+1 < X-Ratelimit-Reset: 1701614960
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"940-PY6FbG4RbU9NVn6pD/xl3LdEHgs"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: MISS
+1 < Server: cloudflare
+1 < CF-RAY: 82fc9d351a533d07-CDG
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":21,"completed":false,"title":"suscipit repellat esse quibusdam voluptatem incidunt","userId":2},{"id":22,"completed":true,"title":"distinctio vitae autem nihil ut molestias quo","userId":2},{"id":23,"completed":false,"title":"et itaque necessitatibus maxime molestiae qui quas velit","userId":2},{"id":24,"completed":false,"title":"adipisci non ad dicta qui amet quaerat doloribus ea","userId":2},{"id":25,"completed":true,"title":"voluptas quo tenetur perspiciatis explicabo natus","userId":2},{"id":26,"completed":true,"title":"aliquam aut quasi","userId":2},{"id":27,"completed":true,"title":"veritatis pariatur delectus","userId":2},{"id":28,"completed":false,"title":"nesciunt totam sit blanditiis sit","userId":2},{"id":29,"completed":false,"title":"laborum aut in quam","userId":2},{"id":30,"completed":true,"title":"nemo perspiciatis repellat ut dolor libero commodi blanditiis omnis","userId":2},{"id":31,"completed":false,"title":"repudiandae totam in est sint facere fuga","userId":2},{"id":32,"completed":false,"title":"earum doloribus ea doloremque quis","userId":2},{"id":33,"completed":false,"title":"sint sit aut vero","userId":2},{"id":34,"completed":false,"title":"porro aut necessitatibus eaque distinctio","userId":2},{"id":35,"completed":true,"title":"repellendus veritatis molestias dicta incidunt","userId":2},{"id":36,"completed":true,"title":"excepturi deleniti adipisci voluptatem et neque optio illum ad","userId":2},{"id":37,"completed":false,"title":"sunt cum tempora","userId":2},{"id":38,"completed":false,"title":"totam quia non","userId":2},{"id":39,"completed":false,"title":"doloremque quibusdam asperiores libero corrupti illum qui omnis","userId":2},{"id":40,"completed":true,"title":"totam atque quo nesciunt","userId":2}]
+11:49:04.583 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:49:04.697 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"title":"New Post","body":"This is a new post.","userId":1}
+
+11:49:05.452 [main] DEBUG com.intuit.karate - response time in milliseconds: 754
+1 < 201
+1 < Date: Sun, 03 Dec 2023 14:49:04 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 86
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701614944&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Ipt8Rbg84YSavWvHvS5xa9USIRSp8efQAhL449ucTeA%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701614944&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Ipt8Rbg84YSavWvHvS5xa9USIRSp8efQAhL449ucTeA%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 997
+1 < X-Ratelimit-Reset: 1701614960
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: https://jsonplaceholder.typicode.com/posts/101
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"56-lrcb1hC9iukxtLQrO9rUoXAACHI"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82fc9d3bed052a0a-CDG
+1 < alt-svc: h3=":443"; ma=86400
+{"id":101,"title":"New Post","body":"This is a new post.","userId":1}
+11:49:05.470 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:49:05.476 [main] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users/999
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:49:05.925 [main] DEBUG com.intuit.karate - response time in milliseconds: 449
+1 < 404
+1 < Date: Sun, 03 Dec 2023 14:49:05 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 2
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701614945&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=9aRdeixequM3dmQuROYb7rVapmOQuWB07Alxgal2EnI%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701614945&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=9aRdeixequM3dmQuROYb7rVapmOQuWB07Alxgal2EnI%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 996
+1 < X-Ratelimit-Reset: 1701614960
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: MISS
+1 < Server: cloudflare
+1 < CF-RAY: 82fc9d3d7edd00ff-GRU
+1 < alt-svc: h3=":443"; ma=86400
+{}
+11:49:05.940 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:49:05.946 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://jsonplaceholder.typicode.com/posts/1
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"title":"Updated Post","body":"This post has been updated."}
+
+11:49:06.842 [main] DEBUG com.intuit.karate - response time in milliseconds: 896
+1 < 200
+1 < Date: Sun, 03 Dec 2023 14:49:06 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701614946&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Ob%2F7JctkTKClL9hzJSy0aBYI3%2BGKbjK1Au04ex3eE%2Bc%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701614946&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Ob%2F7JctkTKClL9hzJSy0aBYI3%2BGKbjK1Au04ex3eE%2Bc%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 995
+1 < X-Ratelimit-Reset: 1701614960
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"51-BFAUVW1MrHJ0KtxLPmxnAeZd1+4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82fc9d437b530bed-AMS
+1 < alt-svc: h3=":443"; ma=86400
+{"id":1,"title":"Updated Post","body":"This post has been updated."}
