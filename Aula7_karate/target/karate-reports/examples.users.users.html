@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>examples.users.users</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">6</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-12-02 03:21:03 p.m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Deve obter a lista de raças</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:12]"><span>[2:12]</span> <span>Deve pegar detalhes de uma raca na posicao 3</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:17]"><span>[3:17]</span> <span>Deve pegar detalhes de uma raca na posicao 9</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:22]"><span>[4:22]</span> <span>Deve pegar de cachorros imagens no caminho /images/search</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:27]"><span>[5:27]</span> <span>Deve buscar uma versao inexistente da api</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:32]"><span>[6:32]</span> <span>Deve entar verificar se um caminho inválido retorna erro</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/users/users.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Testes na API de Cachorros</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Deve obter a lista de raças</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2346</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://api.thedogapi.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:20:59.416 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/v1/breeds&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2272</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">15:21:00.430 request:
+1 &gt; GET https://api.thedogapi.com/v1/breeds
+1 &gt; Host: api.thedogapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:21:01.811 response time in milliseconds: 1234
+1 &lt; 200
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; vary: Origin
+1 &lt; pagination-count: 172
+1 &lt; pagination-page: 0
+1 &lt; pagination-limit: 1000
+1 &lt; access-control-expose-headers: Pagination-Count, Pagination-Page, Pagination-Limit
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-response-time: 1ms
+1 &lt; X-Cloud-Trace-Context: 259644d38d8d67b6423c75c0ad282aa2
+1 &lt; Date: Sat, 02 Dec 2023 18:21:01 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Content-Length: 57551
+[{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Toy&quot;,&quot;temperament&quot;:&quot;Stubborn, Curious, Playful, Adventurous, Active, Fun-loving&quot;,&quot;origin&quot;:&quot;Germany, France&quot;,&quot;name&quot;:&quot;Affenpinscher&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;3 - 6&quot;,&quot;imperial&quot;:&quot;6 - 13&quot;},&quot;bred_for&quot;:&quot;Small rodent hunting, lapdog&quot;,&quot;id&quot;:1,&quot;reference_image_id&quot;:&quot;BJa4kxc4X&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;23 - 29&quot;,&quot;imperial&quot;:&quot;9 - 11.5&quot;}},{&quot;country_code&quot;:&quot;AG&quot;,&quot;life_span&quot;:&quot;10 - 13 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Aloof, Clownish, Dignified, Independent, Happy&quot;,&quot;origin&quot;:&quot;Afghanistan, Iran, Pakistan&quot;,&quot;name&quot;:&quot;Afghan Hound&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;23 - 27&quot;,&quot;imperial&quot;:&quot;50 - 60&quot;},&quot;bred_for&quot;:&quot;Coursing and hunting&quot;,&quot;id&quot;:2,&quot;reference_image_id&quot;:&quot;hMyT4CDXR&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;64 - 69&quot;,&quot;imperial&quot;:&quot;25 - 27&quot;}},{&quot;life_span&quot;:&quot;11 years&quot;,&quot;temperament&quot;:&quot;Wild, Hardworking, Dutiful&quot;,&quot;origin&quot;:&quot;&quot;,&quot;name&quot;:&quot;African Hunting Dog&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;20 - 30&quot;,&quot;imperial&quot;:&quot;44 - 66&quot;},&quot;bred_for&quot;:&quot;A wild pack animal&quot;,&quot;id&quot;:3,&quot;reference_image_id&quot;:&quot;rkiByec47&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;76&quot;,&quot;imperial&quot;:&quot;30&quot;}},{&quot;life_span&quot;:&quot;10 - 13 years&quot;,&quot;breed_group&quot;:&quot;Terrier&quot;,&quot;temperament&quot;:&quot;Outgoing, Friendly, Alert, Confident, Intelligent, Courageous&quot;,&quot;origin&quot;:&quot;United Kingdom, England&quot;,&quot;name&quot;:&quot;Airedale Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;18 - 29&quot;,&quot;imperial&quot;:&quot;40 - 65&quot;},&quot;bred_for&quot;:&quot;Badger, otter hunting&quot;,&quot;id&quot;:4,&quot;reference_image_id&quot;:&quot;1-7cgoZSh&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;53 - 58&quot;,&quot;imperial&quot;:&quot;21 - 23&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Loyal, Independent, Intelligent, Brave&quot;,&quot;origin&quot;:&quot;&quot;,&quot;name&quot;:&quot;Akbash Dog&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;41 - 54&quot;,&quot;imperial&quot;:&quot;90 - 120&quot;},&quot;bred_for&quot;:&quot;Sheep guarding&quot;,&quot;id&quot;:5,&quot;reference_image_id&quot;:&quot;26pHT3Qk7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;71 - 86&quot;,&quot;imperial&quot;:&quot;28 - 34&quot;}},{&quot;life_span&quot;:&quot;10 - 14 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Docile, Alert, Responsive, Dignified, Composed, Friendly, Receptive, Faithful, Courageous&quot;,&quot;name&quot;:&quot;Akita&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;29 - 52&quot;,&quot;imperial&quot;:&quot;65 - 115&quot;},&quot;bred_for&quot;:&quot;Hunting bears&quot;,&quot;id&quot;:6,&quot;reference_image_id&quot;:&quot;BFRYBufpm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;61 - 71&quot;,&quot;imperial&quot;:&quot;24 - 28&quot;}},{&quot;life_span&quot;:&quot;12 - 13 years&quot;,&quot;breed_group&quot;:&quot;Mixed&quot;,&quot;temperament&quot;:&quot;Loving, Protective, Trainable, Dutiful, Responsible&quot;,&quot;name&quot;:&quot;Alapaha Blue Blood Bulldog&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;25 - 41&quot;,&quot;imperial&quot;:&quot;55 - 90&quot;},&quot;description&quot;:&quot;The Alapaha Blue Blood Bulldog is a well-developed, exaggerated bulldog with a broad head and natural drop ears. The prominent muzzle is covered by loose upper lips. The prominent eyes are set well apart. The Alapaha&#39;s coat is relatively short and fairly stiff. Preferred colors are blue merle, brown merle, or red merle all trimmed in white or chocolate and white. Also preferred are the glass eyes (blue) or marble eyes (brown and blue mixed in a single eye). The ears and tail are never trimmed or docked. The body is sturdy and very muscular. The well-muscled hips are narrower than the chest. The straight back is as long as the dog is high at the shoulders. The dewclaws are never removed and the feet are cat-like.&quot;,&quot;bred_for&quot;:&quot;Guarding&quot;,&quot;id&quot;:7,&quot;history&quot;:&quot;&quot;,&quot;reference_image_id&quot;:&quot;33mJ-V3RX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;46 - 61&quot;,&quot;imperial&quot;:&quot;18 - 24&quot;}},{&quot;life_span&quot;:&quot;10 - 13 years&quot;,&quot;breed_group&quot;:&quot;Mixed&quot;,&quot;temperament&quot;:&quot;Friendly, Energetic, Loyal, Gentle, Confident&quot;,&quot;name&quot;:&quot;Alaskan Husky&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;17 - 23&quot;,&quot;imperial&quot;:&quot;38 - 50&quot;},&quot;bred_for&quot;:&quot;Sled pulling&quot;,&quot;id&quot;:8,&quot;reference_image_id&quot;:&quot;-HgpNnGXl&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;58 - 66&quot;,&quot;imperial&quot;:&quot;23 - 26&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Friendly, Affectionate, Devoted, Loyal, Dignified, Playful&quot;,&quot;name&quot;:&quot;Alaskan Malamute&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;29 - 45&quot;,&quot;imperial&quot;:&quot;65 - 100&quot;},&quot;bred_for&quot;:&quot;Hauling heavy freight, Sled pulling&quot;,&quot;id&quot;:9,&quot;reference_image_id&quot;:&quot;dW5UucTIW&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;58 - 64&quot;,&quot;imperial&quot;:&quot;23 - 25&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Friendly, Assertive, Energetic, Loyal, Gentle, Confident, Dominant&quot;,&quot;name&quot;:&quot;American Bulldog&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;27 - 54&quot;,&quot;imperial&quot;:&quot;60 - 120&quot;},&quot;id&quot;:10,&quot;reference_image_id&quot;:&quot;pk1AAdloG&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;56 - 69&quot;,&quot;imperial&quot;:&quot;22 - 27&quot;}},{&quot;country_code&quot;:&quot;US&quot;,&quot;life_span&quot;:&quot;8 \u2013 15 years&quot;,&quot;breed_group&quot;:&quot;&quot;,&quot;temperament&quot;:&quot;Strong Willed, Stubborn, Friendly, Clownish, Affectionate, Loyal, Obedient, Intelligent, Courageous&quot;,&quot;name&quot;:&quot;American Bully&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;14 - 68&quot;,&quot;imperial&quot;:&quot;30 - 150&quot;},&quot;bred_for&quot;:&quot;Family companion dog&quot;,&quot;id&quot;:11,&quot;reference_image_id&quot;:&quot;sqQJDtbpY&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;36 - 43&quot;,&quot;imperial&quot;:&quot;14 - 17&quot;}},{&quot;country_code&quot;:&quot;US&quot;,&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Non-Sporting&quot;,&quot;temperament&quot;:&quot;Friendly, Alert, Reserved, Intelligent, Protective&quot;,&quot;name&quot;:&quot;American Eskimo Dog&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;9 - 18&quot;,&quot;imperial&quot;:&quot;20 - 40&quot;},&quot;bred_for&quot;:&quot;Circus performer&quot;,&quot;id&quot;:12,&quot;reference_image_id&quot;:&quot;Bymjyec4m&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;38 - 48&quot;,&quot;imperial&quot;:&quot;15 - 19&quot;}},{&quot;country_code&quot;:&quot;US&quot;,&quot;life_span&quot;:&quot;13 \u2013 15 years&quot;,&quot;temperament&quot;:&quot;Friendly, Alert, Reserved, Intelligent, Protective&quot;,&quot;name&quot;:&quot;American Eskimo Dog (Miniature)&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;3 - 5&quot;,&quot;imperial&quot;:&quot;7 - 10&quot;},&quot;bred_for&quot;:&quot;Companionship&quot;,&quot;id&quot;:13,&quot;reference_image_id&quot;:&quot;_gn8GLrE6&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;23 - 30&quot;,&quot;imperial&quot;:&quot;9 - 12&quot;}},{&quot;country_code&quot;:&quot;US&quot;,&quot;life_span&quot;:&quot;8 - 15 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Kind, Sweet-Tempered, Loyal, Independent, Intelligent, Loving&quot;,&quot;name&quot;:&quot;American Foxhound&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;29 - 34&quot;,&quot;imperial&quot;:&quot;65 - 75&quot;},&quot;bred_for&quot;:&quot;Fox hunting, scent hound&quot;,&quot;id&quot;:14,&quot;reference_image_id&quot;:&quot;S14n1x9NQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;53 - 71&quot;,&quot;imperial&quot;:&quot;21 - 28&quot;}},{&quot;country_code&quot;:&quot;US&quot;,&quot;life_span&quot;:&quot;10 - 15 years&quot;,&quot;breed_group&quot;:&quot;Terrier&quot;,&quot;temperament&quot;:&quot;Strong Willed, Stubborn, Friendly, Clownish, Affectionate, Loyal, Obedient, Intelligent, Courageous&quot;,&quot;name&quot;:&quot;American Pit Bull Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;14 - 27&quot;,&quot;imperial&quot;:&quot;30 - 60&quot;},&quot;bred_for&quot;:&quot;Fighting&quot;,&quot;id&quot;:15,&quot;reference_image_id&quot;:&quot;HkC31gcNm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;43 - 53&quot;,&quot;imperial&quot;:&quot;17 - 21&quot;}},{&quot;country_code&quot;:&quot;US&quot;,&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Terrier&quot;,&quot;temperament&quot;:&quot;Tenacious, Friendly, Devoted, Loyal, Attentive, Courageous&quot;,&quot;name&quot;:&quot;American Staffordshire Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;23 - 27&quot;,&quot;imperial&quot;:&quot;50 - 60&quot;},&quot;bred_for&quot;:&quot;&quot;,&quot;id&quot;:16,&quot;reference_image_id&quot;:&quot;rJIakgc4m&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;43 - 48&quot;,&quot;imperial&quot;:&quot;17 - 19&quot;}},{&quot;country_code&quot;:&quot;US&quot;,&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Friendly, Energetic, Obedient, Intelligent, Protective, Trainable&quot;,&quot;name&quot;:&quot;American Water Spaniel&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;11 - 20&quot;,&quot;imperial&quot;:&quot;25 - 45&quot;},&quot;bred_for&quot;:&quot;Bird flushing and retrieving&quot;,&quot;id&quot;:17,&quot;reference_image_id&quot;:&quot;SkmRJl9VQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;38 - 46&quot;,&quot;imperial&quot;:&quot;15 - 18&quot;}},{&quot;life_span&quot;:&quot;11 - 13 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Steady, Bold, Independent, Confident, Intelligent, Proud&quot;,&quot;name&quot;:&quot;Anatolian Shepherd Dog&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;36 - 68&quot;,&quot;imperial&quot;:&quot;80 - 150&quot;},&quot;bred_for&quot;:&quot;Livestock herding&quot;,&quot;id&quot;:18,&quot;reference_image_id&quot;:&quot;BJT0Jx5Nm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;69 - 74&quot;,&quot;imperial&quot;:&quot;27 - 29&quot;}},{&quot;life_span&quot;:&quot;12 \u2013 14 years&quot;,&quot;temperament&quot;:&quot;Reliable, Fearless, Energetic, Lively, Self-assured&quot;,&quot;name&quot;:&quot;Appenzeller Sennenhund&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;22 - 25&quot;,&quot;imperial&quot;:&quot;48 - 55&quot;},&quot;bred_for&quot;:&quot;Herding livestock, pulling carts, and guarding the farm&quot;,&quot;id&quot;:19,&quot;reference_image_id&quot;:&quot;HkNkxlqEX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;51 - 56&quot;,&quot;imperial&quot;:&quot;20 - 22&quot;}},{&quot;country_code&quot;:&quot;AU&quot;,&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Cautious, Energetic, Loyal, Obedient, Protective, Brave&quot;,&quot;name&quot;:&quot;Australian Cattle Dog&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;20 - 28&quot;,&quot;imperial&quot;:&quot;44 - 62&quot;},&quot;bred_for&quot;:&quot;Cattle herding, herding trials&quot;,&quot;id&quot;:21,&quot;reference_image_id&quot;:&quot;IBkYVm4v1&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;43 - 51&quot;,&quot;imperial&quot;:&quot;17 - 20&quot;}},{&quot;country_code&quot;:&quot;AU&quot;,&quot;life_span&quot;:&quot;10 - 13 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Friendly, Energetic, Alert, Loyal, Intelligent, Eager&quot;,&quot;name&quot;:&quot;Australian Kelpie&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;14 - 21&quot;,&quot;imperial&quot;:&quot;31 - 46&quot;},&quot;bred_for&quot;:&quot;Farm dog, Cattle herding&quot;,&quot;id&quot;:22,&quot;reference_image_id&quot;:&quot;Hyq1ge9VQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;43 - 51&quot;,&quot;imperial&quot;:&quot;17 - 20&quot;}},{&quot;country_code&quot;:&quot;AU&quot;,&quot;life_span&quot;:&quot;12 - 16 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Good-natured, Affectionate, Intelligent, Active, Protective&quot;,&quot;name&quot;:&quot;Australian Shepherd&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;16 - 29&quot;,&quot;imperial&quot;:&quot;35 - 65&quot;},&quot;bred_for&quot;:&quot;Sheep herding&quot;,&quot;id&quot;:23,&quot;reference_image_id&quot;:&quot;B1-llgq4m&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;46 - 58&quot;,&quot;imperial&quot;:&quot;18 - 23&quot;}},{&quot;country_code&quot;:&quot;AU&quot;,&quot;life_span&quot;:&quot;15 years&quot;,&quot;breed_group&quot;:&quot;Terrier&quot;,&quot;temperament&quot;:&quot;Spirited, Alert, Loyal, Companionable, Even Tempered, Courageous&quot;,&quot;name&quot;:&quot;Australian Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;6 - 7&quot;,&quot;imperial&quot;:&quot;14 - 16&quot;},&quot;bred_for&quot;:&quot;Cattle herdering, hunting snakes and rodents&quot;,&quot;id&quot;:24,&quot;reference_image_id&quot;:&quot;r1Ylge5Vm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;25 - 28&quot;,&quot;imperial&quot;:&quot;10 - 11&quot;}},{&quot;life_span&quot;:&quot;10 - 13 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Aloof, Affectionate, Attentive, Rugged, Fierce, Refined&quot;,&quot;name&quot;:&quot;Azawakh&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;15 - 25&quot;,&quot;imperial&quot;:&quot;33 - 55&quot;},&quot;bred_for&quot;:&quot;Livestock guardian, hunting&quot;,&quot;id&quot;:25,&quot;reference_image_id&quot;:&quot;SkvZgx94m&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;58 - 74&quot;,&quot;imperial&quot;:&quot;23 - 29&quot;}},{&quot;life_span&quot;:&quot;13 \u2013 15 years&quot;,&quot;temperament&quot;:&quot;Obedient, Companionable, Intelligent, Joyful&quot;,&quot;name&quot;:&quot;Barbet&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;18 - 29&quot;,&quot;imperial&quot;:&quot;40 - 65&quot;},&quot;bred_for&quot;:&quot;Hunting water game&quot;,&quot;id&quot;:26,&quot;reference_image_id&quot;:&quot;HyWGexcVQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;51 - 66&quot;,&quot;imperial&quot;:&quot;20 - 26&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Affectionate, Energetic, Alert, Curious, Playful, Intelligent&quot;,&quot;name&quot;:&quot;Basenji&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;10 - 11&quot;,&quot;imperial&quot;:&quot;22 - 24&quot;},&quot;bred_for&quot;:&quot;Hunting&quot;,&quot;id&quot;:28,&quot;reference_image_id&quot;:&quot;H1dGlxqNQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;41 - 43&quot;,&quot;imperial&quot;:&quot;16 - 17&quot;}},{&quot;life_span&quot;:&quot;10 - 14 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Affectionate, Lively, Agile, Curious, Happy, Active&quot;,&quot;name&quot;:&quot;Basset Bleu de Gascogne&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;16 - 18&quot;,&quot;imperial&quot;:&quot;35 - 40&quot;},&quot;bred_for&quot;:&quot;Hunting on foot.&quot;,&quot;id&quot;:29,&quot;reference_image_id&quot;:&quot;BkMQll94X&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;33 - 38&quot;,&quot;imperial&quot;:&quot;13 - 15&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Tenacious, Friendly, Affectionate, Devoted, Sweet-Tempered, Gentle&quot;,&quot;name&quot;:&quot;Basset Hound&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;23 - 29&quot;,&quot;imperial&quot;:&quot;50 - 65&quot;},&quot;bred_for&quot;:&quot;Hunting by scent&quot;,&quot;id&quot;:30,&quot;reference_image_id&quot;:&quot;Sy57xx9EX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;36&quot;,&quot;imperial&quot;:&quot;14&quot;}},{&quot;life_span&quot;:&quot;13 - 16 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Amiable, Even Tempered, Excitable, Determined, Gentle, Intelligent&quot;,&quot;name&quot;:&quot;Beagle&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;9 - 16&quot;,&quot;imperial&quot;:&quot;20 - 35&quot;},&quot;bred_for&quot;:&quot;Rabbit, hare hunting&quot;,&quot;id&quot;:31,&quot;reference_image_id&quot;:&quot;Syd4xxqEm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;33 - 38&quot;,&quot;imperial&quot;:&quot;13 - 15&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Self-confidence, Hardy, Lively, Alert, Intelligent, Active&quot;,&quot;name&quot;:&quot;Bearded Collie&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;20 - 25&quot;,&quot;imperial&quot;:&quot;45 - 55&quot;},&quot;bred_for&quot;:&quot;Sheep herding&quot;,&quot;id&quot;:32,&quot;reference_image_id&quot;:&quot;A09F4c1qP&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;51 - 56&quot;,&quot;imperial&quot;:&quot;20 - 22&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Fearless, Friendly, Intelligent, Protective, Calm&quot;,&quot;name&quot;:&quot;Beauceron&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;36 - 50&quot;,&quot;imperial&quot;:&quot;80 - 110&quot;},&quot;bred_for&quot;:&quot;Boar herding, hunting, guarding&quot;,&quot;id&quot;:33,&quot;reference_image_id&quot;:&quot;HJQ8ge5V7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;61 - 70&quot;,&quot;imperial&quot;:&quot;24 - 27.5&quot;}},{&quot;life_span&quot;:&quot;14 - 16 years&quot;,&quot;breed_group&quot;:&quot;Terrier&quot;,&quot;temperament&quot;:&quot;Affectionate, Spirited, Intelligent, Good-tempered&quot;,&quot;name&quot;:&quot;Bedlington Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;8 - 10&quot;,&quot;imperial&quot;:&quot;17 - 23&quot;},&quot;bred_for&quot;:&quot;Killing rat, badger, other vermin&quot;,&quot;id&quot;:34,&quot;reference_image_id&quot;:&quot;ByK8gx947&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;38 - 41&quot;,&quot;imperial&quot;:&quot;15 - 16&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Watchful, Alert, Stubborn, Friendly, Confident, Hard-working, Active, Protective&quot;,&quot;name&quot;:&quot;Belgian Malinois&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;18 - 36&quot;,&quot;imperial&quot;:&quot;40 - 80&quot;},&quot;bred_for&quot;:&quot;Stock herding&quot;,&quot;id&quot;:36,&quot;reference_image_id&quot;:&quot;r1f_ll5VX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;56 - 66&quot;,&quot;imperial&quot;:&quot;22 - 26&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Energetic, Alert, Loyal, Intelligent, Attentive, Protective&quot;,&quot;name&quot;:&quot;Belgian Tervuren&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;18 - 29&quot;,&quot;imperial&quot;:&quot;40 - 65&quot;},&quot;bred_for&quot;:&quot;Guarding, Drafting, Police work.&quot;,&quot;id&quot;:38,&quot;reference_image_id&quot;:&quot;B1KdxlcNX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;56 - 66&quot;,&quot;imperial&quot;:&quot;22 - 26&quot;}},{&quot;life_span&quot;:&quot;7 - 10 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Affectionate, Loyal, Intelligent, Faithful&quot;,&quot;name&quot;:&quot;Bernese Mountain Dog&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;29 - 54&quot;,&quot;imperial&quot;:&quot;65 - 120&quot;},&quot;bred_for&quot;:&quot;Draft work&quot;,&quot;id&quot;:41,&quot;reference_image_id&quot;:&quot;S1fFlx5Em&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;58 - 70&quot;,&quot;imperial&quot;:&quot;23 - 27.5&quot;}},{&quot;life_span&quot;:&quot;15 years&quot;,&quot;breed_group&quot;:&quot;Non-Sporting&quot;,&quot;temperament&quot;:&quot;Feisty, Affectionate, Cheerful, Playful, Gentle, Sensitive&quot;,&quot;name&quot;:&quot;Bichon Frise&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;5 - 8&quot;,&quot;imperial&quot;:&quot;10 - 18&quot;},&quot;bred_for&quot;:&quot;Companion&quot;,&quot;id&quot;:42,&quot;reference_image_id&quot;:&quot;HkuYlxqEQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;24 - 29&quot;,&quot;imperial&quot;:&quot;9.5 - 11.5&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Easygoing, Gentle, Adaptable, Trusting, Even Tempered, Lovable&quot;,&quot;name&quot;:&quot;Black and Tan Coonhound&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;29 - 45&quot;,&quot;imperial&quot;:&quot;65 - 100&quot;},&quot;bred_for&quot;:&quot;Hunting raccoons, night hunting&quot;,&quot;id&quot;:43,&quot;reference_image_id&quot;:&quot;HJAFgxcNQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;58 - 69&quot;,&quot;imperial&quot;:&quot;23 - 27&quot;}},{&quot;life_span&quot;:&quot;8 - 10 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Stubborn, Affectionate, Gentle, Even Tempered&quot;,&quot;name&quot;:&quot;Bloodhound&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;36 - 50&quot;,&quot;imperial&quot;:&quot;80 - 110&quot;},&quot;bred_for&quot;:&quot;Trailing&quot;,&quot;id&quot;:45,&quot;reference_image_id&quot;:&quot;Skdcgx9VX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;58 - 69&quot;,&quot;imperial&quot;:&quot;23 - 27&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Friendly, Intelligent, Active&quot;,&quot;name&quot;:&quot;Bluetick Coonhound&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;20 - 36&quot;,&quot;imperial&quot;:&quot;45 - 80&quot;},&quot;bred_for&quot;:&quot;Hunting with a superior sense of smell.&quot;,&quot;id&quot;:47,&quot;reference_image_id&quot;:&quot;rJxieg9VQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;53 - 69&quot;,&quot;imperial&quot;:&quot;21 - 27&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Obedient, Confident, Intelligent, Dominant, Territorial&quot;,&quot;name&quot;:&quot;Boerboel&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;50 - 91&quot;,&quot;imperial&quot;:&quot;110 - 200&quot;},&quot;bred_for&quot;:&quot;Guarding the homestead, farm work.&quot;,&quot;id&quot;:48,&quot;reference_image_id&quot;:&quot;HyOjge5Vm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;56 - 69&quot;,&quot;imperial&quot;:&quot;22 - 27&quot;}},{&quot;life_span&quot;:&quot;12 - 16 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Tenacious, Keen, Energetic, Responsive, Alert, Intelligent&quot;,&quot;name&quot;:&quot;Border Collie&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;14 - 20&quot;,&quot;imperial&quot;:&quot;30 - 45&quot;},&quot;bred_for&quot;:&quot;Sheep herder&quot;,&quot;id&quot;:50,&quot;reference_image_id&quot;:&quot;sGQvQUpsp&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;46 - 56&quot;,&quot;imperial&quot;:&quot;18 - 22&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Terrier&quot;,&quot;temperament&quot;:&quot;Fearless, Affectionate, Alert, Obedient, Intelligent, Even Tempered&quot;,&quot;name&quot;:&quot;Border Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;5 - 7&quot;,&quot;imperial&quot;:&quot;11.5 - 15.5&quot;},&quot;bred_for&quot;:&quot;Fox bolting, ratting&quot;,&quot;id&quot;:51,&quot;reference_image_id&quot;:&quot;HJOpge9Em&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;28 - 41&quot;,&quot;imperial&quot;:&quot;11 - 16&quot;}},{&quot;life_span&quot;:&quot;11 - 13 years&quot;,&quot;breed_group&quot;:&quot;Non-Sporting&quot;,&quot;temperament&quot;:&quot;Friendly, Lively, Intelligent&quot;,&quot;name&quot;:&quot;Boston Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;5 - 11&quot;,&quot;imperial&quot;:&quot;10 - 25&quot;},&quot;bred_for&quot;:&quot;Ratting, Companionship&quot;,&quot;id&quot;:53,&quot;reference_image_id&quot;:&quot;rkZRggqVX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;41 - 43&quot;,&quot;imperial&quot;:&quot;16 - 17&quot;}},{&quot;life_span&quot;:&quot;10 - 15 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Protective, Loyal, Gentle, Intelligent, Familial, Rational&quot;,&quot;name&quot;:&quot;Bouvier des Flandres&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;32 - 50&quot;,&quot;imperial&quot;:&quot;70 - 110&quot;},&quot;bred_for&quot;:&quot;Cattle herding&quot;,&quot;id&quot;:54,&quot;reference_image_id&quot;:&quot;Byd0xl5VX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;60 - 70&quot;,&quot;imperial&quot;:&quot;23.5 - 27.5&quot;}},{&quot;life_span&quot;:&quot;8 - 10 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Devoted, Fearless, Friendly, Cheerful, Energetic, Loyal, Playful, Confident, Intelligent, Bright, Brave, Calm&quot;,&quot;name&quot;:&quot;Boxer&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;23 - 32&quot;,&quot;imperial&quot;:&quot;50 - 70&quot;},&quot;bred_for&quot;:&quot;Bull-baiting, guardian&quot;,&quot;id&quot;:55,&quot;reference_image_id&quot;:&quot;ry1kWe5VQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;55 - 64&quot;,&quot;imperial&quot;:&quot;21.5 - 25&quot;}},{&quot;life_span&quot;:&quot;10 - 14 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Friendly, Energetic, Companionable, Intelligent, Eager, Trainable&quot;,&quot;name&quot;:&quot;Boykin Spaniel&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;11 - 18&quot;,&quot;imperial&quot;:&quot;25 - 40&quot;},&quot;bred_for&quot;:&quot;Turkey retrieving&quot;,&quot;id&quot;:56,&quot;reference_image_id&quot;:&quot;ryHJZlcNX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;36 - 46&quot;,&quot;imperial&quot;:&quot;14 - 18&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Stubborn, Affectionate, Loyal, Playful, Companionable, Trainable&quot;,&quot;name&quot;:&quot;Bracco Italiano&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;25 - 40&quot;,&quot;imperial&quot;:&quot;55 - 88&quot;},&quot;bred_for&quot;:&quot;Versatile gun dog&quot;,&quot;id&quot;:57,&quot;reference_image_id&quot;:&quot;S13yZg5VQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;55 - 67&quot;,&quot;imperial&quot;:&quot;21.5 - 26.5&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Fearless, Loyal, Obedient, Intelligent, Faithful, Protective&quot;,&quot;name&quot;:&quot;Briard&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;32 - 41&quot;,&quot;imperial&quot;:&quot;70 - 90&quot;},&quot;bred_for&quot;:&quot;Herding, guarding sheep&quot;,&quot;id&quot;:58,&quot;reference_image_id&quot;:&quot;rkVlblcEQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;56 - 69&quot;,&quot;imperial&quot;:&quot;22 - 27&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Agile, Adaptable, Quick, Intelligent, Attentive, Happy&quot;,&quot;name&quot;:&quot;Brittany&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;14 - 20&quot;,&quot;imperial&quot;:&quot;30 - 45&quot;},&quot;bred_for&quot;:&quot;Pointing, retrieving&quot;,&quot;id&quot;:59,&quot;reference_image_id&quot;:&quot;HJWZZxc4X&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;44 - 52&quot;,&quot;imperial&quot;:&quot;17.5 - 20.5&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Terrier&quot;,&quot;temperament&quot;:&quot;Trainable, Protective, Sweet-Tempered, Keen, Active&quot;,&quot;name&quot;:&quot;Bull Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;23 - 32&quot;,&quot;imperial&quot;:&quot;50 - 70&quot;},&quot;bred_for&quot;:&quot;Bull baiting, Fighting&quot;,&quot;id&quot;:61,&quot;reference_image_id&quot;:&quot;VSraIEQGd&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;53 - 56&quot;,&quot;imperial&quot;:&quot;21 - 22&quot;}},{&quot;life_span&quot;:&quot;11 \u2013 14 years&quot;,&quot;temperament&quot;:&quot;Trainable, Protective, Sweet-Tempered, Keen, Active, Territorial&quot;,&quot;name&quot;:&quot;Bull Terrier (Miniature)&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;11 - 15&quot;,&quot;imperial&quot;:&quot;25 - 33&quot;},&quot;bred_for&quot;:&quot;An elegant man&#39;s fashion statement&quot;,&quot;id&quot;:62,&quot;reference_image_id&quot;:&quot;BkKZWlcVX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;25 - 36&quot;,&quot;imperial&quot;:&quot;10 - 14&quot;}},{&quot;life_span&quot;:&quot;8 - 12 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Docile, Reliable, Devoted, Alert, Loyal, Reserved, Loving, Protective, Powerful, Calm, Courageous&quot;,&quot;name&quot;:&quot;Bullmastiff&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;45 - 59&quot;,&quot;imperial&quot;:&quot;100 - 130&quot;},&quot;bred_for&quot;:&quot;Estate guardian&quot;,&quot;id&quot;:64,&quot;reference_image_id&quot;:&quot;r1ifZl5E7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;61 - 69&quot;,&quot;imperial&quot;:&quot;24 - 27&quot;}},{&quot;life_span&quot;:&quot;14 - 15 years&quot;,&quot;breed_group&quot;:&quot;Terrier&quot;,&quot;temperament&quot;:&quot;Hardy, Fearless, Assertive, Gay, Intelligent, Active&quot;,&quot;name&quot;:&quot;Cairn Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;6 - 6&quot;,&quot;imperial&quot;:&quot;13 - 14&quot;},&quot;bred_for&quot;:&quot;Bolting of otter, foxes, other vermin&quot;,&quot;id&quot;:65,&quot;reference_image_id&quot;:&quot;Sk7Qbg9E7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;23 - 25&quot;,&quot;imperial&quot;:&quot;9 - 10&quot;}},{&quot;life_span&quot;:&quot;10 - 11 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Trainable, Reserved, Stable, Quiet, Even Tempered, Calm&quot;,&quot;name&quot;:&quot;Cane Corso&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;40 - 54&quot;,&quot;imperial&quot;:&quot;88 - 120&quot;},&quot;bred_for&quot;:&quot;Companion, guard dog, and hunter&quot;,&quot;id&quot;:67,&quot;reference_image_id&quot;:&quot;r15m-lc4m&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;60 - 70&quot;,&quot;imperial&quot;:&quot;23.5 - 27.5&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Affectionate, Devoted, Alert, Companionable, Intelligent, Active&quot;,&quot;name&quot;:&quot;Cardigan Welsh Corgi&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;11 - 17&quot;,&quot;imperial&quot;:&quot;25 - 38&quot;},&quot;bred_for&quot;:&quot;Cattle droving&quot;,&quot;id&quot;:68,&quot;reference_image_id&quot;:&quot;SyXN-e9NX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;27 - 32&quot;,&quot;imperial&quot;:&quot;10.5 - 12.5&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Energetic, Inquisitive, Independent, Gentle, Intelligent, Loving&quot;,&quot;name&quot;:&quot;Catahoula Leopard Dog&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;23 - 43&quot;,&quot;imperial&quot;:&quot;50 - 95&quot;},&quot;bred_for&quot;:&quot;Driving livestock&quot;,&quot;id&quot;:69,&quot;reference_image_id&quot;:&quot;BJcNbec4X&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;51 - 66&quot;,&quot;imperial&quot;:&quot;20 - 26&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Alert, Quick, Dominant, Powerful, Calm, Strong&quot;,&quot;name&quot;:&quot;Caucasian Shepherd (Ovcharka)&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;36 - 45&quot;,&quot;imperial&quot;:&quot;80 - 100&quot;},&quot;bred_for&quot;:&quot;Guard dogs, defending sheep from predators, mainly wolves, jackals and bears&quot;,&quot;id&quot;:70,&quot;reference_image_id&quot;:&quot;r1rrWe5Em&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;61 - 85&quot;,&quot;imperial&quot;:&quot;24 - 33.5&quot;}},{&quot;life_span&quot;:&quot;10 - 14 years&quot;,&quot;breed_group&quot;:&quot;Toy&quot;,&quot;temperament&quot;:&quot;Fearless, Affectionate, Sociable, Patient, Playful, Adaptable&quot;,&quot;name&quot;:&quot;Cavalier King Charles Spaniel&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;6 - 8&quot;,&quot;imperial&quot;:&quot;13 - 18&quot;},&quot;bred_for&quot;:&quot;Flushing small birds, companion&quot;,&quot;id&quot;:71,&quot;reference_image_id&quot;:&quot;HJRBbe94Q&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;30 - 33&quot;,&quot;imperial&quot;:&quot;12 - 13&quot;}},{&quot;life_span&quot;:&quot;10 - 13 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Affectionate, Intelligent, Quiet, Dominant, Happy, Protective&quot;,&quot;name&quot;:&quot;Chesapeake Bay Retriever&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;25 - 36&quot;,&quot;imperial&quot;:&quot;55 - 80&quot;},&quot;bred_for&quot;:&quot;Water Retriever&quot;,&quot;id&quot;:76,&quot;reference_image_id&quot;:&quot;9BXwUeCc2&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;53 - 66&quot;,&quot;imperial&quot;:&quot;21 - 26&quot;}},{&quot;life_span&quot;:&quot;10 - 14 years&quot;,&quot;breed_group&quot;:&quot;Toy&quot;,&quot;temperament&quot;:&quot;Affectionate, Sweet-Tempered, Lively, Alert, Playful, Happy&quot;,&quot;name&quot;:&quot;Chinese Crested&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;5 - 6&quot;,&quot;imperial&quot;:&quot;10 - 13&quot;},&quot;bred_for&quot;:&quot;Ratting, lapdog, curio&quot;,&quot;id&quot;:78,&quot;reference_image_id&quot;:&quot;B1pDZx9Nm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;28 - 33&quot;,&quot;imperial&quot;:&quot;11 - 13&quot;}},{&quot;life_span&quot;:&quot;10 years&quot;,&quot;breed_group&quot;:&quot;Non-Sporting&quot;,&quot;temperament&quot;:&quot;Suspicious, Affectionate, Devoted, Reserved, Independent, Loving&quot;,&quot;name&quot;:&quot;Chinese Shar-Pei&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;20 - 27&quot;,&quot;imperial&quot;:&quot;45 - 60&quot;},&quot;bred_for&quot;:&quot;Fighting&quot;,&quot;id&quot;:79,&quot;reference_image_id&quot;:&quot;B1ruWl94Q&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;46 - 51&quot;,&quot;imperial&quot;:&quot;18 - 20&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Friendly, Alert, Dignified, Intelligent, Calm&quot;,&quot;name&quot;:&quot;Chinook&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;23 - 41&quot;,&quot;imperial&quot;:&quot;50 - 90&quot;},&quot;bred_for&quot;:&quot;Sled pulling&quot;,&quot;id&quot;:80,&quot;reference_image_id&quot;:&quot;Sypubg54Q&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;56 - 66&quot;,&quot;imperial&quot;:&quot;22 - 26&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Non-Sporting&quot;,&quot;temperament&quot;:&quot;Aloof, Loyal, Independent, Quiet&quot;,&quot;name&quot;:&quot;Chow Chow&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;18 - 32&quot;,&quot;imperial&quot;:&quot;40 - 70&quot;},&quot;bred_for&quot;:&quot;Guardian, cart pulling, hunting&quot;,&quot;id&quot;:81,&quot;reference_image_id&quot;:&quot;ry8KWgqEQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;43 - 51&quot;,&quot;imperial&quot;:&quot;17 - 20&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Affectionate, Loyal, Dignified, Gentle, Calm, Great-hearted&quot;,&quot;name&quot;:&quot;Clumber Spaniel&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;25 - 39&quot;,&quot;imperial&quot;:&quot;55 - 85&quot;},&quot;bred_for&quot;:&quot;Bird flushing, retrieving&quot;,&quot;id&quot;:84,&quot;reference_image_id&quot;:&quot;rkeqWgq4Q&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;43 - 51&quot;,&quot;imperial&quot;:&quot;17 - 20&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Trainable, Friendly, Affectionate, Playful, Quiet, Faithful&quot;,&quot;name&quot;:&quot;Cocker Spaniel&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;9 - 14&quot;,&quot;imperial&quot;:&quot;20 - 30&quot;},&quot;bred_for&quot;:&quot;Bird flushing, retrieving&quot;,&quot;id&quot;:86,&quot;reference_image_id&quot;:&quot;1lFmrzECl&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;36 - 38&quot;,&quot;imperial&quot;:&quot;14 - 15&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Outgoing, Sociable, Trusting, Joyful, Even Tempered, Merry&quot;,&quot;name&quot;:&quot;Cocker Spaniel (American)&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;9 - 14&quot;,&quot;imperial&quot;:&quot;20 - 30&quot;},&quot;bred_for&quot;:&quot;Hunting the American woodcock&quot;,&quot;id&quot;:87,&quot;reference_image_id&quot;:&quot;HkRcZe547&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;36 - 38&quot;,&quot;imperial&quot;:&quot;14 - 15&quot;}},{&quot;life_span&quot;:&quot;13 - 16 years&quot;,&quot;breed_group&quot;:&quot;Non-Sporting&quot;,&quot;temperament&quot;:&quot;Affectionate, Lively, Playful, Intelligent, Trainable, Vocal&quot;,&quot;name&quot;:&quot;Coton de Tulear&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;4 - 7&quot;,&quot;imperial&quot;:&quot;9 - 15&quot;},&quot;bred_for&quot;:&quot;Accompanying ladies on long sea voyages, ratters onboard ship.&quot;,&quot;id&quot;:89,&quot;reference_image_id&quot;:&quot;SyviZlqNm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;23 - 28&quot;,&quot;imperial&quot;:&quot;9 - 11&quot;}},{&quot;life_span&quot;:&quot;10 - 13 years&quot;,&quot;breed_group&quot;:&quot;Non-Sporting&quot;,&quot;temperament&quot;:&quot;Outgoing, Friendly, Energetic, Playful, Sensitive, Intelligent, Active&quot;,&quot;name&quot;:&quot;Dalmatian&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;23 - 25&quot;,&quot;imperial&quot;:&quot;50 - 55&quot;},&quot;bred_for&quot;:&quot;Carriage dog - trot alongside carriages to protect the occupants from banditry or other interference&quot;,&quot;id&quot;:92,&quot;reference_image_id&quot;:&quot;SkJ3blcN7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;48 - 58&quot;,&quot;imperial&quot;:&quot;19 - 23&quot;}},{&quot;life_span&quot;:&quot;10 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Fearless, Energetic, Alert, Loyal, Obedient, Confident, Intelligent&quot;,&quot;name&quot;:&quot;Doberman Pinscher&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;30 - 40&quot;,&quot;imperial&quot;:&quot;66 - 88&quot;},&quot;bred_for&quot;:&quot;Guardian&quot;,&quot;id&quot;:94,&quot;reference_image_id&quot;:&quot;HyL3bl94Q&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;61 - 71&quot;,&quot;imperial&quot;:&quot;24 - 28&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Friendly, Affectionate, Cheerful, Loyal, Tolerant, Protective&quot;,&quot;name&quot;:&quot;Dogo Argentino&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;36 - 45&quot;,&quot;imperial&quot;:&quot;80 - 100&quot;},&quot;bred_for&quot;:&quot;Big-game hunting&quot;,&quot;id&quot;:95,&quot;reference_image_id&quot;:&quot;S1nhWx94Q&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;60 - 69&quot;,&quot;imperial&quot;:&quot;23.5 - 27&quot;}},{&quot;life_span&quot;:&quot;15 years&quot;,&quot;temperament&quot;:&quot;Reliable, Affectionate, Alert, Loyal, Obedient, Trainable&quot;,&quot;name&quot;:&quot;Dutch Shepherd&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;23 - 32&quot;,&quot;imperial&quot;:&quot;50 - 70&quot;},&quot;bred_for&quot;:&quot;Farms, watchdog, guard duty&quot;,&quot;id&quot;:98,&quot;reference_image_id&quot;:&quot;BkE6Wg5E7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;56 - 62&quot;,&quot;imperial&quot;:&quot;22 - 24.5&quot;}},{&quot;life_span&quot;:&quot;12 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Strong Willed, Mischievous, Affectionate, Energetic, Playful, Companionable, Gentle, Hard-working, Intelligent, Eager, People-Oriented&quot;,&quot;name&quot;:&quot;English Setter&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;20 - 36&quot;,&quot;imperial&quot;:&quot;45 - 80&quot;},&quot;bred_for&quot;:&quot;Bird setting, retrieving&quot;,&quot;id&quot;:101,&quot;reference_image_id&quot;:&quot;By4A-eqVX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;61 - 64&quot;,&quot;imperial&quot;:&quot;24 - 25&quot;}},{&quot;life_span&quot;:&quot;10 - 13 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Kind, Energetic, Independent, Adaptable, Intelligent, Bossy&quot;,&quot;name&quot;:&quot;English Shepherd&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;20 - 30&quot;,&quot;imperial&quot;:&quot;44 - 66&quot;},&quot;bred_for&quot;:&quot;Herding &amp; guarding livestock, farm watch dog&quot;,&quot;id&quot;:102,&quot;reference_image_id&quot;:&quot;H1QyMe5EQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;46 - 58&quot;,&quot;imperial&quot;:&quot;18 - 23&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Affectionate, Cheerful, Alert, Intelligent, Attentive, Active&quot;,&quot;name&quot;:&quot;English Springer Spaniel&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;16 - 23&quot;,&quot;imperial&quot;:&quot;35 - 50&quot;},&quot;bred_for&quot;:&quot;Bird flushing, retrieving&quot;,&quot;id&quot;:103,&quot;reference_image_id&quot;:&quot;Hk0Jfe5VQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;48 - 51&quot;,&quot;imperial&quot;:&quot;19 - 20&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Toy&quot;,&quot;temperament&quot;:&quot;Affectionate, Reserved, Playful, Gentle, Happy, Loving&quot;,&quot;name&quot;:&quot;English Toy Spaniel&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;4 - 6&quot;,&quot;imperial&quot;:&quot;8 - 14&quot;},&quot;bred_for&quot;:&quot;Companion of kings&quot;,&quot;id&quot;:104,&quot;reference_image_id&quot;:&quot;SkIgzxqNQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;25&quot;,&quot;imperial&quot;:&quot;10&quot;}},{&quot;life_span&quot;:&quot;12 - 13 years&quot;,&quot;temperament&quot;:&quot;Stubborn, Alert, Companionable, Intelligent, Cunning, Trainable&quot;,&quot;name&quot;:&quot;English Toy Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;3 - 4&quot;,&quot;imperial&quot;:&quot;6 - 8&quot;},&quot;bred_for&quot;:&quot;Rat-baiting&quot;,&quot;id&quot;:105,&quot;reference_image_id&quot;:&quot;SJ6eMxqEQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;25 - 30&quot;,&quot;imperial&quot;:&quot;10 - 12&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Non-Sporting&quot;,&quot;temperament&quot;:&quot;Alert, Reserved, Intelligent, Even Tempered, Watchful, Calm&quot;,&quot;name&quot;:&quot;Eurasier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;18 - 32&quot;,&quot;imperial&quot;:&quot;40 - 70&quot;},&quot;bred_for&quot;:&quot;Companionship&quot;,&quot;id&quot;:107,&quot;reference_image_id&quot;:&quot;S1VWGx9Nm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;52 - 60&quot;,&quot;imperial&quot;:&quot;20.5 - 23.5&quot;}},{&quot;life_span&quot;:&quot;11 - 15 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Docile, Cautious, Sociable, Sensitive, Adaptable, Familial&quot;,&quot;name&quot;:&quot;Field Spaniel&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;16 - 23&quot;,&quot;imperial&quot;:&quot;35 - 50&quot;},&quot;bred_for&quot;:&quot;Bird flushing, retrieving&quot;,&quot;id&quot;:108,&quot;reference_image_id&quot;:&quot;SkJfGecE7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;43 - 46&quot;,&quot;imperial&quot;:&quot;17 - 18&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Friendly, Keen, Faithful, Calm, Courageous&quot;,&quot;name&quot;:&quot;Finnish Lapphund&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;15 - 24&quot;,&quot;imperial&quot;:&quot;33 - 53&quot;},&quot;bred_for&quot;:&quot;Herding reindeer&quot;,&quot;id&quot;:110,&quot;reference_image_id&quot;:&quot;S1KMGg5Vm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;41 - 53&quot;,&quot;imperial&quot;:&quot;16 - 21&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Non-Sporting&quot;,&quot;temperament&quot;:&quot;Playful, Loyal, Independent, Intelligent, Happy, Vocal&quot;,&quot;name&quot;:&quot;Finnish Spitz&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;10 - 13&quot;,&quot;imperial&quot;:&quot;23 - 28&quot;},&quot;bred_for&quot;:&quot;Hunting birds, small mammals&quot;,&quot;id&quot;:111,&quot;reference_image_id&quot;:&quot;3PjHlQbkV&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;39 - 51&quot;,&quot;imperial&quot;:&quot;15.5 - 20&quot;}},{&quot;life_span&quot;:&quot;9 - 11 years&quot;,&quot;breed_group&quot;:&quot;Non-Sporting&quot;,&quot;temperament&quot;:&quot;Playful, Affectionate, Keen, Sociable, Lively, Alert, Easygoing, Patient, Athletic, Bright&quot;,&quot;name&quot;:&quot;French Bulldog&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;13&quot;,&quot;imperial&quot;:&quot;28&quot;},&quot;bred_for&quot;:&quot;Lapdog&quot;,&quot;id&quot;:113,&quot;reference_image_id&quot;:&quot;HyWNfxc47&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;28 - 30&quot;,&quot;imperial&quot;:&quot;11 - 12&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Spirited, Lively, Intelligent, Loving, Even Tempered, Familial&quot;,&quot;name&quot;:&quot;German Pinscher&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;11 - 20&quot;,&quot;imperial&quot;:&quot;25 - 45&quot;},&quot;bred_for&quot;:&quot;Watchdog, Hunting vermin on the farm.&quot;,&quot;id&quot;:114,&quot;reference_image_id&quot;:&quot;B1u4zgqE7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;43 - 51&quot;,&quot;imperial&quot;:&quot;17 - 20&quot;}},{&quot;life_span&quot;:&quot;10 - 13 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Alert, Loyal, Obedient, Curious, Confident, Intelligent, Watchful, Courageous&quot;,&quot;name&quot;:&quot;German Shepherd Dog&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;23 - 41&quot;,&quot;imperial&quot;:&quot;50 - 90&quot;},&quot;bred_for&quot;:&quot;Herding, Guard dog&quot;,&quot;id&quot;:115,&quot;reference_image_id&quot;:&quot;SJyBfg5NX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;56 - 66&quot;,&quot;imperial&quot;:&quot;22 - 26&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Boisterous, Bold, Affectionate, Intelligent, Cooperative, Trainable&quot;,&quot;name&quot;:&quot;German Shorthaired Pointer&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;20 - 32&quot;,&quot;imperial&quot;:&quot;45 - 70&quot;},&quot;bred_for&quot;:&quot;General hunting&quot;,&quot;id&quot;:116,&quot;reference_image_id&quot;:&quot;SJqBMg5Nm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;53 - 64&quot;,&quot;imperial&quot;:&quot;21 - 25&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Strong Willed, Kind, Loyal, Intelligent, Dominant, Powerful&quot;,&quot;name&quot;:&quot;Giant Schnauzer&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;29 - 41&quot;,&quot;imperial&quot;:&quot;65 - 90&quot;},&quot;bred_for&quot;:&quot;Herding, guarding&quot;,&quot;id&quot;:119,&quot;reference_image_id&quot;:&quot;H1NIzlcV7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;60 - 70&quot;,&quot;imperial&quot;:&quot;23.5 - 27.5&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Terrier&quot;,&quot;temperament&quot;:&quot;Spirited, Agile, Loyal, Gentle, Active, Courageous&quot;,&quot;name&quot;:&quot;Glen of Imaal Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;15 - 18&quot;,&quot;imperial&quot;:&quot;32 - 40&quot;},&quot;bred_for&quot;:&quot;Rid the home and farm of vermin, and hunt badger and fox&quot;,&quot;id&quot;:120,&quot;reference_image_id&quot;:&quot;H1oLMe94m&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;32 - 36&quot;,&quot;imperial&quot;:&quot;12.5 - 14&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Intelligent, Kind, Reliable, Friendly, Trustworthy, Confident&quot;,&quot;name&quot;:&quot;Golden Retriever&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;25 - 34&quot;,&quot;imperial&quot;:&quot;55 - 75&quot;},&quot;bred_for&quot;:&quot;Retrieving&quot;,&quot;id&quot;:121,&quot;reference_image_id&quot;:&quot;HJ7Pzg5EQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;55 - 61&quot;,&quot;imperial&quot;:&quot;21.5 - 24&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Fearless, Alert, Loyal, Confident, Gay, Eager&quot;,&quot;name&quot;:&quot;Gordon Setter&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;20 - 36&quot;,&quot;imperial&quot;:&quot;45 - 80&quot;},&quot;bred_for&quot;:&quot;Find and point gamebirds&quot;,&quot;id&quot;:123,&quot;reference_image_id&quot;:&quot;SJ5vzx5NX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;58 - 69&quot;,&quot;imperial&quot;:&quot;23 - 27&quot;}},{&quot;life_span&quot;:&quot;7 - 10 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Friendly, Devoted, Reserved, Gentle, Confident, Loving&quot;,&quot;name&quot;:&quot;Great Dane&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;50 - 86&quot;,&quot;imperial&quot;:&quot;110 - 190&quot;},&quot;bred_for&quot;:&quot;Hunting &amp; holding boars, Guardian&quot;,&quot;id&quot;:124,&quot;reference_image_id&quot;:&quot;B1Edfl9NX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;71 - 81&quot;,&quot;imperial&quot;:&quot;28 - 32&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Strong Willed, Fearless, Affectionate, Patient, Gentle, Confident&quot;,&quot;name&quot;:&quot;Great Pyrenees&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;39 - 52&quot;,&quot;imperial&quot;:&quot;85 - 115&quot;},&quot;bred_for&quot;:&quot;Sheep guardian&quot;,&quot;id&quot;:125,&quot;reference_image_id&quot;:&quot;B12uzg9V7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;64 - 81&quot;,&quot;imperial&quot;:&quot;25 - 32&quot;}},{&quot;life_span&quot;:&quot;10 - 13 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Affectionate, Athletic, Gentle, Intelligent, Quiet, Even Tempered&quot;,&quot;name&quot;:&quot;Greyhound&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;23 - 32&quot;,&quot;imperial&quot;:&quot;50 - 70&quot;},&quot;bred_for&quot;:&quot;Coursing hares&quot;,&quot;id&quot;:127,&quot;reference_image_id&quot;:&quot;ryNYMx94X&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;69 - 76&quot;,&quot;imperial&quot;:&quot;27 - 30&quot;}},{&quot;life_span&quot;:&quot;10 \u2013 15 years&quot;,&quot;temperament&quot;:&quot;Self-important, Inquisitive, Alert, Companionable, Sensitive, Watchful&quot;,&quot;name&quot;:&quot;Griffon Bruxellois&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;5&quot;,&quot;imperial&quot;:&quot;12&quot;},&quot;bred_for&quot;:&quot;Hunt and kill vermin in stables&quot;,&quot;id&quot;:128,&quot;reference_image_id&quot;:&quot;ryoYGec4Q&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;23 - 28&quot;,&quot;imperial&quot;:&quot;9 - 11&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Outgoing, Friendly, Cheerful, Sweet-Tempered, Tolerant, Active&quot;,&quot;name&quot;:&quot;Harrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;18 - 27&quot;,&quot;imperial&quot;:&quot;40 - 60&quot;},&quot;bred_for&quot;:&quot;Hunting hares by trailing them&quot;,&quot;id&quot;:129,&quot;reference_image_id&quot;:&quot;B1IcfgqE7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;46 - 56&quot;,&quot;imperial&quot;:&quot;18 - 22&quot;}},{&quot;life_span&quot;:&quot;14 - 15 years&quot;,&quot;breed_group&quot;:&quot;Toy&quot;,&quot;temperament&quot;:&quot;Affectionate, Responsive, Playful, Companionable, Gentle, Intelligent&quot;,&quot;name&quot;:&quot;Havanese&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;3 - 6&quot;,&quot;imperial&quot;:&quot;7 - 13&quot;},&quot;bred_for&quot;:&quot;Companionship&quot;,&quot;id&quot;:130,&quot;reference_image_id&quot;:&quot;rkXiGl9V7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;22 - 29&quot;,&quot;imperial&quot;:&quot;8.5 - 11.5&quot;}},{&quot;life_span&quot;:&quot;10 - 11 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Affectionate, Energetic, Lively, Independent, Playful, Companionable&quot;,&quot;name&quot;:&quot;Irish Setter&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;16 - 32&quot;,&quot;imperial&quot;:&quot;35 - 70&quot;},&quot;bred_for&quot;:&quot;Bird setting, retrieving&quot;,&quot;id&quot;:134,&quot;reference_image_id&quot;:&quot;S1osGeqVm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;61 - 69&quot;,&quot;imperial&quot;:&quot;24 - 27&quot;}},{&quot;life_span&quot;:&quot;12 - 16 years&quot;,&quot;breed_group&quot;:&quot;Terrier&quot;,&quot;temperament&quot;:&quot;Respectful, Lively, Intelligent, Dominant, Protective, Trainable&quot;,&quot;name&quot;:&quot;Irish Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;11 - 12&quot;,&quot;imperial&quot;:&quot;25 - 27&quot;},&quot;id&quot;:135,&quot;reference_image_id&quot;:&quot;By-hGecVX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;46&quot;,&quot;imperial&quot;:&quot;18&quot;}},{&quot;life_span&quot;:&quot;6 - 8 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Sweet-Tempered, Loyal, Dignified, Patient, Thoughtful, Generous&quot;,&quot;name&quot;:&quot;Irish Wolfhound&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;48 - 82&quot;,&quot;imperial&quot;:&quot;105 - 180&quot;},&quot;bred_for&quot;:&quot;Coursing wolves, elk&quot;,&quot;id&quot;:137,&quot;reference_image_id&quot;:&quot;Hyd2zgcEX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;76 - 89&quot;,&quot;imperial&quot;:&quot;30 - 35&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Toy&quot;,&quot;temperament&quot;:&quot;Mischievous, Affectionate, Agile, Athletic, Companionable, Intelligent&quot;,&quot;name&quot;:&quot;Italian Greyhound&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;3 - 7&quot;,&quot;imperial&quot;:&quot;7 - 15&quot;},&quot;bred_for&quot;:&quot;Lapdog&quot;,&quot;id&quot;:138,&quot;reference_image_id&quot;:&quot;SJAnzg9NX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;33 - 38&quot;,&quot;imperial&quot;:&quot;13 - 15&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Toy&quot;,&quot;temperament&quot;:&quot;Alert, Loyal, Independent, Intelligent, Loving, Cat-like&quot;,&quot;name&quot;:&quot;Japanese Chin&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;2 - 4&quot;,&quot;imperial&quot;:&quot;4 - 9&quot;},&quot;bred_for&quot;:&quot;Lapdog&quot;,&quot;id&quot;:140,&quot;reference_image_id&quot;:&quot;r1H6feqEm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;20 - 28&quot;,&quot;imperial&quot;:&quot;8 - 11&quot;}},{&quot;life_span&quot;:&quot;10 \u2013 16 years&quot;,&quot;temperament&quot;:&quot;Affectionate, Obedient, Playful, Companionable, Intelligent, Proud&quot;,&quot;name&quot;:&quot;Japanese Spitz&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;7 - 9&quot;,&quot;imperial&quot;:&quot;15 - 19&quot;},&quot;bred_for&quot;:&quot;Companion&quot;,&quot;id&quot;:141,&quot;reference_image_id&quot;:&quot;HksaMxqNX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;30 - 38&quot;,&quot;imperial&quot;:&quot;12 - 15&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Non-Sporting&quot;,&quot;temperament&quot;:&quot;Agile, Obedient, Playful, Quick, Sturdy, Bright&quot;,&quot;name&quot;:&quot;Keeshond&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;16 - 20&quot;,&quot;imperial&quot;:&quot;35 - 45&quot;},&quot;bred_for&quot;:&quot;Barge watchdog&quot;,&quot;id&quot;:142,&quot;reference_image_id&quot;:&quot;S1GAGg9Vm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;43 - 46&quot;,&quot;imperial&quot;:&quot;17 - 18&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Steady, Fearless, Affectionate, Independent, Gentle, Calm&quot;,&quot;name&quot;:&quot;Komondor&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;36 - 45&quot;,&quot;imperial&quot;:&quot;80 - 100&quot;},&quot;bred_for&quot;:&quot;Sheep guardian&quot;,&quot;id&quot;:144,&quot;reference_image_id&quot;:&quot;Bko0fl547&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;65 - 70&quot;,&quot;imperial&quot;:&quot;25.5 - 27.5&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Benevolent, Agile, Alert, Intelligent, Active, Territorial&quot;,&quot;name&quot;:&quot;Kooikerhondje&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;9 - 14&quot;,&quot;imperial&quot;:&quot;20 - 30&quot;},&quot;bred_for&quot;:&quot;Luring ducks into traps - \&quot;tolling\&quot;&quot;,&quot;id&quot;:145,&quot;reference_image_id&quot;:&quot;kOMy84GQE&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;36 - 41&quot;,&quot;imperial&quot;:&quot;14 - 16&quot;}},{&quot;life_span&quot;:&quot;8 - 10 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Clownish, Loyal, Patient, Independent, Intelligent, Protective&quot;,&quot;name&quot;:&quot;Kuvasz&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;32 - 52&quot;,&quot;imperial&quot;:&quot;70 - 115&quot;},&quot;bred_for&quot;:&quot;Guardian, hunting large game&quot;,&quot;id&quot;:147,&quot;reference_image_id&quot;:&quot;BykZ7ecVX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;66 - 76&quot;,&quot;imperial&quot;:&quot;26 - 30&quot;}},{&quot;life_span&quot;:&quot;10 - 13 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Kind, Outgoing, Agile, Gentle, Intelligent, Trusting, Even Tempered&quot;,&quot;name&quot;:&quot;Labrador Retriever&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;25 - 36&quot;,&quot;imperial&quot;:&quot;55 - 80&quot;},&quot;bred_for&quot;:&quot;Water retrieving&quot;,&quot;id&quot;:149,&quot;reference_image_id&quot;:&quot;B1uW7l5VX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;55 - 62&quot;,&quot;imperial&quot;:&quot;21.5 - 24.5&quot;}},{&quot;life_span&quot;:&quot;14 - 16 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Keen, Loyal, Companionable, Loving, Active, Trainable&quot;,&quot;name&quot;:&quot;Lagotto Romagnolo&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;11 - 16&quot;,&quot;imperial&quot;:&quot;24 - 35&quot;},&quot;bred_for&quot;:&quot;Water retrieval dog in the marshes of Romagna&quot;,&quot;id&quot;:151,&quot;reference_image_id&quot;:&quot;ryzzmgqE7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;41 - 48&quot;,&quot;imperial&quot;:&quot;16 - 19&quot;}},{&quot;life_span&quot;:&quot;12 \u2013 15 years&quot;,&quot;temperament&quot;:&quot;Clever, Friendly, Alert, Intelligent&quot;,&quot;name&quot;:&quot;Lancashire Heeler&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;3 - 6&quot;,&quot;imperial&quot;:&quot;6 - 13&quot;},&quot;bred_for&quot;:&quot;Cattle herding, Ratting, Driving cattle to market.&quot;,&quot;id&quot;:153,&quot;reference_image_id&quot;:&quot;S1RGml5Em&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;25 - 30&quot;,&quot;imperial&quot;:&quot;10 - 12&quot;}},{&quot;life_span&quot;:&quot;6 - 8 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Obedient, Fearless, Loyal, Companionable, Adaptable, Loving&quot;,&quot;name&quot;:&quot;Leonberger&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;54 - 77&quot;,&quot;imperial&quot;:&quot;120 - 170&quot;},&quot;bred_for&quot;:&quot;Guardian, appearance.&quot;,&quot;id&quot;:155,&quot;reference_image_id&quot;:&quot;ByrmQlqVm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;65 - 80&quot;,&quot;imperial&quot;:&quot;25.5 - 31.5&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Non-Sporting&quot;,&quot;temperament&quot;:&quot;Steady, Fearless, Friendly, Devoted, Assertive, Spirited, Energetic, Lively, Alert, Obedient, Playful, Intelligent&quot;,&quot;name&quot;:&quot;Lhasa Apso&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;5 - 8&quot;,&quot;imperial&quot;:&quot;12 - 18&quot;},&quot;bred_for&quot;:&quot;Guarding inside the home, companion&quot;,&quot;id&quot;:156,&quot;reference_image_id&quot;:&quot;SJp7Qe5EX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;25 - 28&quot;,&quot;imperial&quot;:&quot;10 - 11&quot;}},{&quot;life_span&quot;:&quot;15 - 18 years&quot;,&quot;breed_group&quot;:&quot;Toy&quot;,&quot;temperament&quot;:&quot;Playful, Docile, Fearless, Affectionate, Sweet-Tempered, Lively, Responsive, Easygoing, Gentle, Intelligent, Active&quot;,&quot;name&quot;:&quot;Maltese&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;2 - 3&quot;,&quot;imperial&quot;:&quot;4 - 7&quot;},&quot;bred_for&quot;:&quot;Lapdog&quot;,&quot;id&quot;:161,&quot;reference_image_id&quot;:&quot;B1SV7gqN7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;20 - 25&quot;,&quot;imperial&quot;:&quot;8 - 10&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Energetic, Loyal, Intelligent, Trainable&quot;,&quot;name&quot;:&quot;Miniature American Shepherd&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;9 - 18&quot;,&quot;imperial&quot;:&quot;20 - 40&quot;},&quot;id&quot;:165,&quot;reference_image_id&quot;:&quot;BkHHQgcN7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;33 - 46&quot;,&quot;imperial&quot;:&quot;13 - 18&quot;}},{&quot;life_span&quot;:&quot;15 years&quot;,&quot;breed_group&quot;:&quot;Toy&quot;,&quot;temperament&quot;:&quot;Clever, Outgoing, Friendly, Energetic, Responsive, Playful&quot;,&quot;name&quot;:&quot;Miniature Pinscher&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;4 - 5&quot;,&quot;imperial&quot;:&quot;8 - 11&quot;},&quot;bred_for&quot;:&quot;Small vermin hunting&quot;,&quot;id&quot;:167,&quot;reference_image_id&quot;:&quot;Hy3H7g94X&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;25 - 32&quot;,&quot;imperial&quot;:&quot;10 - 12.5&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Terrier&quot;,&quot;temperament&quot;:&quot;Fearless, Friendly, Spirited, Alert, Obedient, Intelligent&quot;,&quot;name&quot;:&quot;Miniature Schnauzer&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;5 - 9&quot;,&quot;imperial&quot;:&quot;11 - 20&quot;},&quot;bred_for&quot;:&quot;Ratting&quot;,&quot;id&quot;:168,&quot;reference_image_id&quot;:&quot;SJIUQl9NX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;30 - 36&quot;,&quot;imperial&quot;:&quot;12 - 14&quot;}},{&quot;life_span&quot;:&quot;8 - 10 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Sweet-Tempered, Gentle, Trainable&quot;,&quot;name&quot;:&quot;Newfoundland&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;45 - 68&quot;,&quot;imperial&quot;:&quot;100 - 150&quot;},&quot;bred_for&quot;:&quot;All purpose water dog, fishing aid&quot;,&quot;id&quot;:171,&quot;reference_image_id&quot;:&quot;Sk4DXl54m&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;66 - 71&quot;,&quot;imperial&quot;:&quot;26 - 28&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Terrier&quot;,&quot;temperament&quot;:&quot;Self-confidence, Fearless, Spirited, Companionable, Happy, Lovable&quot;,&quot;name&quot;:&quot;Norfolk Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;5 - 5&quot;,&quot;imperial&quot;:&quot;11 - 12&quot;},&quot;bred_for&quot;:&quot;Ratting, fox bolting&quot;,&quot;id&quot;:172,&quot;reference_image_id&quot;:&quot;B1ADQg94X&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;23 - 25&quot;,&quot;imperial&quot;:&quot;9 - 10&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Terrier&quot;,&quot;temperament&quot;:&quot;Hardy, Affectionate, Energetic, Sensitive, Intelligent&quot;,&quot;name&quot;:&quot;Norwich Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;5 - 5&quot;,&quot;imperial&quot;:&quot;11 - 12&quot;},&quot;bred_for&quot;:&quot;Ratting, fox bolting&quot;,&quot;id&quot;:176,&quot;reference_image_id&quot;:&quot;BkgKXlqE7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;25&quot;,&quot;imperial&quot;:&quot;10&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Outgoing, Alert, Patient, Intelligent, Loving&quot;,&quot;name&quot;:&quot;Nova Scotia Duck Tolling Retriever&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;16 - 23&quot;,&quot;imperial&quot;:&quot;35 - 50&quot;},&quot;id&quot;:177,&quot;reference_image_id&quot;:&quot;SyYtQe5V7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;43 - 53&quot;,&quot;imperial&quot;:&quot;17 - 21&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Sociable, Bubbly, Playful, Adaptable, Intelligent, Loving&quot;,&quot;name&quot;:&quot;Old English Sheepdog&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;27 - 45&quot;,&quot;imperial&quot;:&quot;60 - 100&quot;},&quot;bred_for&quot;:&quot;Driving sheep, cattle&quot;,&quot;id&quot;:178,&quot;reference_image_id&quot;:&quot;HkZ57lq4m&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;53&quot;,&quot;imperial&quot;:&quot;21&quot;}},{&quot;life_span&quot;:&quot;9 \u2013 14 years&quot;,&quot;temperament&quot;:&quot;Friendly, Alert, Confident, Loving, Courageous, Strong&quot;,&quot;name&quot;:&quot;Olde English Bulldogge&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;NaN&quot;,&quot;imperial&quot;:&quot;65 \u2013 85&quot;},&quot;id&quot;:179,&quot;reference_image_id&quot;:&quot;B1d5me547&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;38 - 48&quot;,&quot;imperial&quot;:&quot;15 - 19&quot;}},{&quot;life_span&quot;:&quot;13 - 17 years&quot;,&quot;breed_group&quot;:&quot;Toy&quot;,&quot;temperament&quot;:&quot;Hardy, Friendly, Energetic, Alert, Intelligent, Happy&quot;,&quot;name&quot;:&quot;Papillon&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;1 - 5&quot;,&quot;imperial&quot;:&quot;3 - 12&quot;},&quot;bred_for&quot;:&quot;Lapdog&quot;,&quot;id&quot;:181,&quot;reference_image_id&quot;:&quot;SkJj7e547&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;20 - 28&quot;,&quot;imperial&quot;:&quot;8 - 11&quot;}},{&quot;life_span&quot;:&quot;14 - 18 years&quot;,&quot;breed_group&quot;:&quot;Toy&quot;,&quot;temperament&quot;:&quot;Opinionated, Good-natured, Stubborn, Affectionate, Aggressive, Intelligent&quot;,&quot;name&quot;:&quot;Pekingese&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;6&quot;,&quot;imperial&quot;:&quot;14&quot;},&quot;bred_for&quot;:&quot;Lapdog&quot;,&quot;id&quot;:183,&quot;reference_image_id&quot;:&quot;ByIiml9Nm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;15 - 23&quot;,&quot;imperial&quot;:&quot;6 - 9&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Tenacious, Outgoing, Friendly, Bold, Playful, Protective&quot;,&quot;name&quot;:&quot;Pembroke Welsh Corgi&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;11 - 14&quot;,&quot;imperial&quot;:&quot;25 - 30&quot;},&quot;bred_for&quot;:&quot;Driving stock to market in northern Wales&quot;,&quot;id&quot;:184,&quot;reference_image_id&quot;:&quot;rJ6iQeqEm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;25 - 30&quot;,&quot;imperial&quot;:&quot;10 - 12&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Strong Willed, Suspicious, Gentle, Dominant, Calm&quot;,&quot;name&quot;:&quot;Perro de Presa Canario&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;40 - 50&quot;,&quot;imperial&quot;:&quot;88 - 110&quot;},&quot;id&quot;:185,&quot;reference_image_id&quot;:&quot;S1V3Qeq4X&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;56 - 65&quot;,&quot;imperial&quot;:&quot;22 - 25.5&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Affectionate, Sociable, Playful, Intelligent, Active, Trainable&quot;,&quot;name&quot;:&quot;Pharaoh Hound&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;18 - 27&quot;,&quot;imperial&quot;:&quot;40 - 60&quot;},&quot;bred_for&quot;:&quot;Hunting rabbits&quot;,&quot;id&quot;:188,&quot;reference_image_id&quot;:&quot;Byz6mgqEQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;53 - 64&quot;,&quot;imperial&quot;:&quot;21 - 25&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Bold, Alert, Loyal, Intelligent&quot;,&quot;name&quot;:&quot;Plott&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;18 - 27&quot;,&quot;imperial&quot;:&quot;40 - 60&quot;},&quot;bred_for&quot;:&quot;Hunting big-game like Boar.&quot;,&quot;id&quot;:189,&quot;reference_image_id&quot;:&quot;B1i67l5VQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;51 - 64&quot;,&quot;imperial&quot;:&quot;20 - 25&quot;}},{&quot;life_span&quot;:&quot;15 years&quot;,&quot;breed_group&quot;:&quot;Toy&quot;,&quot;temperament&quot;:&quot;Extroverted, Friendly, Sociable, Playful, Intelligent, Active&quot;,&quot;name&quot;:&quot;Pomeranian&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;1 - 3&quot;,&quot;imperial&quot;:&quot;3 - 7&quot;},&quot;bred_for&quot;:&quot;Companion&quot;,&quot;id&quot;:193,&quot;reference_image_id&quot;:&quot;HJd0XecNX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;20 - 30&quot;,&quot;imperial&quot;:&quot;8 - 12&quot;}},{&quot;life_span&quot;:&quot;12 \u2013 15 years&quot;,&quot;name&quot;:&quot;Poodle (Miniature)&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;7 - 8&quot;,&quot;imperial&quot;:&quot;15 - 17&quot;},&quot;id&quot;:196,&quot;reference_image_id&quot;:&quot;Hkxk4ecVX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;28 - 38&quot;,&quot;imperial&quot;:&quot;11 - 15&quot;}},{&quot;life_span&quot;:&quot;18 years&quot;,&quot;name&quot;:&quot;Poodle (Toy)&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;3 - 4&quot;,&quot;imperial&quot;:&quot;6 - 9&quot;},&quot;id&quot;:197,&quot;reference_image_id&quot;:&quot;rJFJVxc4m&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;23 - 28&quot;,&quot;imperial&quot;:&quot;9 - 11&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Toy&quot;,&quot;temperament&quot;:&quot;Docile, Clever, Charming, Stubborn, Sociable, Playful, Quiet, Attentive&quot;,&quot;name&quot;:&quot;Pug&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;6 - 8&quot;,&quot;imperial&quot;:&quot;14 - 18&quot;},&quot;bred_for&quot;:&quot;Lapdog&quot;,&quot;id&quot;:201,&quot;reference_image_id&quot;:&quot;HyJvcl9N7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;25 - 30&quot;,&quot;imperial&quot;:&quot;10 - 12&quot;}},{&quot;life_span&quot;:&quot;12 - 16 Years years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Energetic, Agile, Loyal, Obedient, Intelligent, Faithful&quot;,&quot;name&quot;:&quot;Puli&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;11 - 16&quot;,&quot;imperial&quot;:&quot;25 - 35&quot;},&quot;bred_for&quot;:&quot;Herding&quot;,&quot;id&quot;:204,&quot;reference_image_id&quot;:&quot;ryPgVl5N7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;41 - 43&quot;,&quot;imperial&quot;:&quot;16 - 17&quot;}},{&quot;life_span&quot;:&quot;13 - 15 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Lively, Reserved, Intelligent, Active, Protective, Vocal&quot;,&quot;name&quot;:&quot;Pumi&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;8 - 15&quot;,&quot;imperial&quot;:&quot;18 - 33&quot;},&quot;id&quot;:205,&quot;reference_image_id&quot;:&quot;SyRe4xcN7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;38 - 47&quot;,&quot;imperial&quot;:&quot;15 - 18.5&quot;}},{&quot;life_span&quot;:&quot;12 - 18 years&quot;,&quot;breed_group&quot;:&quot;Terrier&quot;,&quot;temperament&quot;:&quot;Affectionate, Lively, Inquisitive, Alert, Intelligent, Loving&quot;,&quot;name&quot;:&quot;Rat Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;4 - 11&quot;,&quot;imperial&quot;:&quot;8 - 25&quot;},&quot;id&quot;:207,&quot;reference_image_id&quot;:&quot;HkXWNl9E7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;25 - 33&quot;,&quot;imperial&quot;:&quot;10 - 13&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Affectionate, Energetic, Independent, Companionable, Familial, Unflappable&quot;,&quot;name&quot;:&quot;Redbone Coonhound&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;20 - 36&quot;,&quot;imperial&quot;:&quot;45 - 80&quot;},&quot;bred_for&quot;:&quot;Hunting raccoon, deer, bear, and cougar.&quot;,&quot;id&quot;:208,&quot;reference_image_id&quot;:&quot;HJMzEl5N7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;53 - 69&quot;,&quot;imperial&quot;:&quot;21 - 27&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Strong Willed, Mischievous, Loyal, Dignified, Sensitive, Intelligent&quot;,&quot;name&quot;:&quot;Rhodesian Ridgeback&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;34 - 36&quot;,&quot;imperial&quot;:&quot;75 - 80&quot;},&quot;bred_for&quot;:&quot;Big game hunting, guarding&quot;,&quot;id&quot;:209,&quot;reference_image_id&quot;:&quot;By9zNgqE7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;61 - 69&quot;,&quot;imperial&quot;:&quot;24 - 27&quot;}},{&quot;life_span&quot;:&quot;8 - 10 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Steady, Good-natured, Fearless, Devoted, Alert, Obedient, Confident, Self-assured, Calm, Courageous&quot;,&quot;name&quot;:&quot;Rottweiler&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;34 - 50&quot;,&quot;imperial&quot;:&quot;75 - 110&quot;},&quot;bred_for&quot;:&quot;Cattle drover, guardian, draft&quot;,&quot;id&quot;:210,&quot;reference_image_id&quot;:&quot;r1xXEgcNX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;56 - 69&quot;,&quot;imperial&quot;:&quot;22 - 27&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Toy&quot;,&quot;name&quot;:&quot;Russian Toy&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;1 - 3&quot;,&quot;imperial&quot;:&quot;3 - 6&quot;},&quot;id&quot;:211,&quot;reference_image_id&quot;:&quot;HkP7Vxc4Q&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;19 - 27&quot;,&quot;imperial&quot;:&quot;7.5 - 10.5&quot;}},{&quot;life_span&quot;:&quot;7 - 10 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Friendly, Lively, Gentle, Watchful, Calm&quot;,&quot;name&quot;:&quot;Saint Bernard&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;59 - 82&quot;,&quot;imperial&quot;:&quot;130 - 180&quot;},&quot;bred_for&quot;:&quot;Draft, search, rescue&quot;,&quot;id&quot;:212,&quot;reference_image_id&quot;:&quot;_Qf9nfRzL&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;65 - 70&quot;,&quot;imperial&quot;:&quot;25.5 - 27.5&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Aloof, Reserved, Intelligent, Quiet&quot;,&quot;name&quot;:&quot;Saluki&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;16 - 29&quot;,&quot;imperial&quot;:&quot;35 - 65&quot;},&quot;bred_for&quot;:&quot;Coursing gazelle and hare&quot;,&quot;id&quot;:213,&quot;reference_image_id&quot;:&quot;fjFIuehNo&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;58 - 71&quot;,&quot;imperial&quot;:&quot;23 - 28&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Stubborn, Friendly, Sociable, Lively, Alert, Playful&quot;,&quot;name&quot;:&quot;Samoyed&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;23 - 27&quot;,&quot;imperial&quot;:&quot;50 - 60&quot;},&quot;bred_for&quot;:&quot;Herding reindeer, guardian, draft&quot;,&quot;id&quot;:214,&quot;reference_image_id&quot;:&quot;S1T8Ee9Nm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;48 - 60&quot;,&quot;imperial&quot;:&quot;19 - 23.5&quot;}},{&quot;life_span&quot;:&quot;13 - 15 years&quot;,&quot;breed_group&quot;:&quot;Non-Sporting&quot;,&quot;temperament&quot;:&quot;Fearless, Agile, Curious, Independent, Confident, Faithful&quot;,&quot;name&quot;:&quot;Schipperke&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;5 - 7&quot;,&quot;imperial&quot;:&quot;10 - 16&quot;},&quot;bred_for&quot;:&quot;Barge watchdog&quot;,&quot;id&quot;:216,&quot;reference_image_id&quot;:&quot;SyBvVgc47&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;25 - 33&quot;,&quot;imperial&quot;:&quot;10 - 13&quot;}},{&quot;life_span&quot;:&quot;8 - 10 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Docile, Friendly, Dignified, Gentle&quot;,&quot;name&quot;:&quot;Scottish Deerhound&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;32 - 59&quot;,&quot;imperial&quot;:&quot;70 - 130&quot;},&quot;bred_for&quot;:&quot;Coursing deer&quot;,&quot;id&quot;:218,&quot;reference_image_id&quot;:&quot;SkNjqx9NQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;71 - 81&quot;,&quot;imperial&quot;:&quot;28 - 32&quot;}},{&quot;life_span&quot;:&quot;11 - 13 years&quot;,&quot;breed_group&quot;:&quot;Terrier&quot;,&quot;temperament&quot;:&quot;Feisty, Alert, Independent, Playful, Quick, Self-assured&quot;,&quot;name&quot;:&quot;Scottish Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;8 - 10&quot;,&quot;imperial&quot;:&quot;18 - 22&quot;},&quot;bred_for&quot;:&quot;Vermin hunting&quot;,&quot;id&quot;:219,&quot;reference_image_id&quot;:&quot;Bklnce5NX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;25&quot;,&quot;imperial&quot;:&quot;10&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Affectionate, Lively, Responsive, Alert, Loyal, Reserved, Playful, Gentle, Intelligent, Active, Trainable, Strong&quot;,&quot;name&quot;:&quot;Shetland Sheepdog&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;14&quot;,&quot;imperial&quot;:&quot;30&quot;},&quot;bred_for&quot;:&quot;Sheep herding&quot;,&quot;id&quot;:221,&quot;reference_image_id&quot;:&quot;rJa29l9E7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;33 - 41&quot;,&quot;imperial&quot;:&quot;13 - 16&quot;}},{&quot;life_span&quot;:&quot;12 - 16 years&quot;,&quot;breed_group&quot;:&quot;Non-Sporting&quot;,&quot;temperament&quot;:&quot;Charming, Fearless, Keen, Alert, Confident, Faithful&quot;,&quot;name&quot;:&quot;Shiba Inu&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;8 - 10&quot;,&quot;imperial&quot;:&quot;17 - 23&quot;},&quot;bred_for&quot;:&quot;Hunting in the mountains of Japan, Alert Watchdog&quot;,&quot;id&quot;:222,&quot;reference_image_id&quot;:&quot;Zn3IjPX3f&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;34 - 42&quot;,&quot;imperial&quot;:&quot;13.5 - 16.5&quot;}},{&quot;life_span&quot;:&quot;10 - 18 years&quot;,&quot;breed_group&quot;:&quot;Toy&quot;,&quot;temperament&quot;:&quot;Clever, Spunky, Outgoing, Friendly, Affectionate, Lively, Alert, Loyal, Independent, Playful, Gentle, Intelligent, Happy, Active, Courageous&quot;,&quot;name&quot;:&quot;Shih Tzu&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;4 - 7&quot;,&quot;imperial&quot;:&quot;9 - 16&quot;},&quot;bred_for&quot;:&quot;Lapdog&quot;,&quot;id&quot;:223,&quot;reference_image_id&quot;:&quot;BkrJjgcV7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;20 - 28&quot;,&quot;imperial&quot;:&quot;8 - 11&quot;}},{&quot;life_span&quot;:&quot;9 \u2013 14 years&quot;,&quot;temperament&quot;:&quot;Outgoing, Loyal, Companionable, Gentle, Loving, Trainable&quot;,&quot;name&quot;:&quot;Shiloh Shepherd&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;54 - 64&quot;,&quot;imperial&quot;:&quot;120 - 140&quot;},&quot;bred_for&quot;:&quot;Swimming, Carrying backpacks, Pulling carts or sleds&quot;,&quot;id&quot;:225,&quot;reference_image_id&quot;:&quot;SJJxjecEX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;66 - 76&quot;,&quot;imperial&quot;:&quot;26 - 30&quot;}},{&quot;life_span&quot;:&quot;12 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Outgoing, Friendly, Alert, Gentle, Intelligent&quot;,&quot;name&quot;:&quot;Siberian Husky&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;16 - 27&quot;,&quot;imperial&quot;:&quot;35 - 60&quot;},&quot;bred_for&quot;:&quot;Sled pulling&quot;,&quot;id&quot;:226,&quot;reference_image_id&quot;:&quot;S17ZilqNm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;51 - 60&quot;,&quot;imperial&quot;:&quot;20 - 23.5&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Toy&quot;,&quot;temperament&quot;:&quot;Friendly, Responsive, Inquisitive, Alert, Quick, Joyful&quot;,&quot;name&quot;:&quot;Silky Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;4 - 5&quot;,&quot;imperial&quot;:&quot;8 - 10&quot;},&quot;bred_for&quot;:&quot;Small vermin hunting, companionship&quot;,&quot;id&quot;:228,&quot;reference_image_id&quot;:&quot;ByzGsl5Nm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;23 - 25&quot;,&quot;imperial&quot;:&quot;9 - 10&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Terrier&quot;,&quot;temperament&quot;:&quot;Fearless, Affectionate, Alert, Playful, Intelligent, Active&quot;,&quot;name&quot;:&quot;Smooth Fox Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;NaN - 8&quot;,&quot;imperial&quot;:&quot;up - 18&quot;},&quot;bred_for&quot;:&quot;Fox bolting&quot;,&quot;id&quot;:232,&quot;reference_image_id&quot;:&quot;Syszjx9Em&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;39&quot;,&quot;imperial&quot;:&quot;15.5&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Terrier&quot;,&quot;temperament&quot;:&quot;Affectionate, Spirited, Energetic, Playful, Intelligent, Faithful&quot;,&quot;name&quot;:&quot;Soft Coated Wheaten Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;14 - 18&quot;,&quot;imperial&quot;:&quot;30 - 40&quot;},&quot;bred_for&quot;:&quot;Vermin hunting, guarding, all-around farm helper&quot;,&quot;id&quot;:233,&quot;reference_image_id&quot;:&quot;HJHmix5NQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;41 - 46&quot;,&quot;imperial&quot;:&quot;16 - 18&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Trainable, Diligent, Affectionate, Loyal, Athletic, Intelligent&quot;,&quot;name&quot;:&quot;Spanish Water Dog&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;14 - 23&quot;,&quot;imperial&quot;:&quot;30 - 50&quot;},&quot;bred_for&quot;:&quot;Herding flocks of sheep and goats from one pasture to another&quot;,&quot;id&quot;:235,&quot;reference_image_id&quot;:&quot;HJf4jl9VX&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;41 - 51&quot;,&quot;imperial&quot;:&quot;16 - 20&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Docile, Friendly, Affectionate, Loyal, Patient, Gentle&quot;,&quot;name&quot;:&quot;Spinone Italiano&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;28 - 39&quot;,&quot;imperial&quot;:&quot;61 - 85&quot;},&quot;id&quot;:236,&quot;reference_image_id&quot;:&quot;rk5Eoe5Nm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;57 - 70&quot;,&quot;imperial&quot;:&quot;22.5 - 27.5&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Terrier&quot;,&quot;temperament&quot;:&quot;Reliable, Fearless, Bold, Affectionate, Loyal, Intelligent, Courageous&quot;,&quot;name&quot;:&quot;Staffordshire Bull Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;11 - 17&quot;,&quot;imperial&quot;:&quot;24 - 38&quot;},&quot;bred_for&quot;:&quot;&quot;,&quot;id&quot;:238,&quot;reference_image_id&quot;:&quot;H1zSie9V7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;36 - 41&quot;,&quot;imperial&quot;:&quot;14 - 16&quot;}},{&quot;life_span&quot;:&quot;13 - 15 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Trainable, Good-natured, Devoted, Lively, Playful, Intelligent&quot;,&quot;name&quot;:&quot;Standard Schnauzer&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;14 - 23&quot;,&quot;imperial&quot;:&quot;30 - 50&quot;},&quot;bred_for&quot;:&quot;Ratting, guarding&quot;,&quot;id&quot;:239,&quot;reference_image_id&quot;:&quot;tmzeu6ID_&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;44 - 50&quot;,&quot;imperial&quot;:&quot;17.5 - 19.5&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Herding&quot;,&quot;temperament&quot;:&quot;Fearless, Friendly, Energetic, Alert, Intelligent, Watchful&quot;,&quot;name&quot;:&quot;Swedish Vallhund&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;9 - 14&quot;,&quot;imperial&quot;:&quot;20 - 30&quot;},&quot;id&quot;:242,&quot;reference_image_id&quot;:&quot;HJ-Dix94Q&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;29 - 34&quot;,&quot;imperial&quot;:&quot;11.5 - 13.5&quot;}},{&quot;life_span&quot;:&quot;10 - 12 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Protective, Loyal, Independent, Intelligent, Loving, Familial&quot;,&quot;name&quot;:&quot;Thai Ridgeback&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;16 - 25&quot;,&quot;imperial&quot;:&quot;35 - 55&quot;},&quot;id&quot;:243,&quot;reference_image_id&quot;:&quot;zv89hR-O8&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;51 - 61&quot;,&quot;imperial&quot;:&quot;20 - 24&quot;}},{&quot;life_span&quot;:&quot;10 - 14 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Strong Willed, Tenacious, Aloof, Stubborn, Intelligent, Protective&quot;,&quot;name&quot;:&quot;Tibetan Mastiff&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;39 - 64&quot;,&quot;imperial&quot;:&quot;85 - 140&quot;},&quot;id&quot;:244,&quot;reference_image_id&quot;:&quot;SkM9sec47&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;61 - 66&quot;,&quot;imperial&quot;:&quot;24 - 26&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Non-Sporting&quot;,&quot;temperament&quot;:&quot;Willful, Aloof, Assertive, Independent, Playful, Intelligent, Happy&quot;,&quot;name&quot;:&quot;Tibetan Spaniel&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;4 - 7&quot;,&quot;imperial&quot;:&quot;9 - 15&quot;},&quot;id&quot;:245,&quot;reference_image_id&quot;:&quot;Hyjcol947&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;25&quot;,&quot;imperial&quot;:&quot;10&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Non-Sporting&quot;,&quot;temperament&quot;:&quot;Affectionate, Energetic, Amiable, Reserved, Gentle, Sensitive&quot;,&quot;name&quot;:&quot;Tibetan Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;9 - 11&quot;,&quot;imperial&quot;:&quot;20 - 24&quot;},&quot;bred_for&quot;:&quot;Good luck charms, mascots, watchdogs, herding dogs, and companions&quot;,&quot;id&quot;:246,&quot;reference_image_id&quot;:&quot;6f5n_42mB&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;36 - 43&quot;,&quot;imperial&quot;:&quot;14 - 17&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Toy&quot;,&quot;temperament&quot;:&quot;Friendly, Spirited, Alert, Loyal, Playful, Intelligent&quot;,&quot;name&quot;:&quot;Toy Fox Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;2 - 4&quot;,&quot;imperial&quot;:&quot;4 - 9&quot;},&quot;id&quot;:248,&quot;reference_image_id&quot;:&quot;B17ase9V7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;20 - 28&quot;,&quot;imperial&quot;:&quot;8 - 11&quot;}},{&quot;life_span&quot;:&quot;10 - 13 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Clever, Affectionate, Confident, Intelligent, Loving, Trainable&quot;,&quot;name&quot;:&quot;Treeing Walker Coonhound&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;20 - 36&quot;,&quot;imperial&quot;:&quot;45 - 80&quot;},&quot;id&quot;:250,&quot;reference_image_id&quot;:&quot;SkRpsgc47&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;51 - 69&quot;,&quot;imperial&quot;:&quot;20 - 27&quot;}},{&quot;life_span&quot;:&quot;10 - 14 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Affectionate, Energetic, Loyal, Gentle, Quiet&quot;,&quot;name&quot;:&quot;Vizsla&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;23 - 29&quot;,&quot;imperial&quot;:&quot;50 - 65&quot;},&quot;bred_for&quot;:&quot;Pointing and trailing&quot;,&quot;id&quot;:251,&quot;reference_image_id&quot;:&quot;r1o0jx9Em&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;53 - 61&quot;,&quot;imperial&quot;:&quot;21 - 24&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Steady, Aloof, Stubborn, Energetic, Alert, Intelligent, Powerful, Fast&quot;,&quot;name&quot;:&quot;Weimaraner&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;25 - 41&quot;,&quot;imperial&quot;:&quot;55 - 90&quot;},&quot;bred_for&quot;:&quot;Large game trailing and versatile gundog&quot;,&quot;id&quot;:253,&quot;reference_image_id&quot;:&quot;SyU12l9V7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;58 - 69&quot;,&quot;imperial&quot;:&quot;23 - 27&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Stubborn, Friendly, Affectionate, Loyal, Playful, Active&quot;,&quot;name&quot;:&quot;Welsh Springer Spaniel&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;16 - 25&quot;,&quot;imperial&quot;:&quot;35 - 55&quot;},&quot;bred_for&quot;:&quot;Flushing and retrieving birds&quot;,&quot;id&quot;:254,&quot;reference_image_id&quot;:&quot;BJ1gnx5Vm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;43 - 48&quot;,&quot;imperial&quot;:&quot;17 - 19&quot;}},{&quot;life_span&quot;:&quot;15 - 20 years&quot;,&quot;breed_group&quot;:&quot;Terrier&quot;,&quot;temperament&quot;:&quot;Hardy, Friendly, Alert, Independent, Gay, Active, Courageous&quot;,&quot;name&quot;:&quot;West Highland White Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;7 - 10&quot;,&quot;imperial&quot;:&quot;15 - 22&quot;},&quot;bred_for&quot;:&quot;Fox, badger, vermin hunting&quot;,&quot;id&quot;:256,&quot;reference_image_id&quot;:&quot;Bkdx2g5Em&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;25 - 28&quot;,&quot;imperial&quot;:&quot;10 - 11&quot;}},{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Hound&quot;,&quot;temperament&quot;:&quot;Friendly, Affectionate, Lively, Gentle, Intelligent, Quiet&quot;,&quot;name&quot;:&quot;Whippet&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;11 - 16&quot;,&quot;imperial&quot;:&quot;25 - 35&quot;},&quot;bred_for&quot;:&quot;Coursing, racing&quot;,&quot;id&quot;:257,&quot;reference_image_id&quot;:&quot;Hyv-ne94m&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;46 - 56&quot;,&quot;imperial&quot;:&quot;18 - 22&quot;}},{&quot;life_span&quot;:&quot;12 \u2013 14 years&quot;,&quot;temperament&quot;:&quot;Self-confidence, Aloof, Fearless, Alert, Companionable, Eager&quot;,&quot;name&quot;:&quot;White Shepherd&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;27 - 39&quot;,&quot;imperial&quot;:&quot;60 - 85&quot;},&quot;id&quot;:258,&quot;reference_image_id&quot;:&quot;r14M3e9E7&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;56 - 64&quot;,&quot;imperial&quot;:&quot;22 - 25&quot;}},{&quot;life_span&quot;:&quot;13 \u2013 14 years&quot;,&quot;temperament&quot;:&quot;Fearless, Friendly, Bold, Keen, Alert, Quick&quot;,&quot;name&quot;:&quot;Wire Fox Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;7 - 9&quot;,&quot;imperial&quot;:&quot;15 - 19&quot;},&quot;bred_for&quot;:&quot;Vermin hunting, fox bolting&quot;,&quot;id&quot;:259,&quot;history&quot;:&quot; England&quot;,&quot;reference_image_id&quot;:&quot;SJ6f2g9EQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;33 - 41&quot;,&quot;imperial&quot;:&quot;13 - 16&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;temperament&quot;:&quot;Loyal, Gentle, Vigilant, Trainable, Proud&quot;,&quot;name&quot;:&quot;Wirehaired Pointing Griffon&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;20 - 32&quot;,&quot;imperial&quot;:&quot;45 - 70&quot;},&quot;bred_for&quot;:&quot;Gundog, \&quot;swamp-tromping\&quot;, Flushing, pointing, and retrieving water fowl &amp; game birds&quot;,&quot;id&quot;:260,&quot;reference_image_id&quot;:&quot;Bkam2l9Vm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;51 - 61&quot;,&quot;imperial&quot;:&quot;20 - 24&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Sporting&quot;,&quot;name&quot;:&quot;Wirehaired Vizsla&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;20 - 29&quot;,&quot;imperial&quot;:&quot;45 - 65&quot;},&quot;id&quot;:261,&quot;reference_image_id&quot;:&quot;r1I4hl5Em&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;55 - 64&quot;,&quot;imperial&quot;:&quot;21.5 - 25&quot;}},{&quot;life_span&quot;:&quot;12 - 14 years&quot;,&quot;breed_group&quot;:&quot;Non-Sporting&quot;,&quot;temperament&quot;:&quot;Cheerful, Alert, Companionable, Intelligent, Protective, Calm&quot;,&quot;name&quot;:&quot;Xoloitzcuintli&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;4 - 14&quot;,&quot;imperial&quot;:&quot;9 - 31&quot;},&quot;id&quot;:262,&quot;reference_image_id&quot;:&quot;HkNS3gqEm&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;25 - 58&quot;,&quot;imperial&quot;:&quot;10 - 23&quot;}},{&quot;life_span&quot;:&quot;12 - 16 years&quot;,&quot;breed_group&quot;:&quot;Toy&quot;,&quot;temperament&quot;:&quot;Bold, Independent, Confident, Intelligent, Courageous&quot;,&quot;name&quot;:&quot;Yorkshire Terrier&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;2 - 3&quot;,&quot;imperial&quot;:&quot;4 - 7&quot;},&quot;bred_for&quot;:&quot;Small vermin hunting&quot;,&quot;id&quot;:264,&quot;reference_image_id&quot;:&quot;B12BnxcVQ&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;20 - 23&quot;,&quot;imperial&quot;:&quot;8 - 9&quot;}}]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == &#39;#notnull&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">40</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:12]</span>
+                <span class="scenario-name">Deve pegar detalhes de uma raca na posicao 3</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>392</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:12]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://api.thedogapi.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:21:01.954 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/v1/breeds/3&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">388</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">15:21:01.966 request:
+1 &gt; GET https://api.thedogapi.com/v1/breeds/3
+1 &gt; Host: api.thedogapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:21:02.346 response time in milliseconds: 379
+1 &lt; 200
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; vary: Origin
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-response-time: 1ms
+1 &lt; X-Cloud-Trace-Context: 819b95bbed24c541739039a182aae11a
+1 &lt; Date: Sat, 02 Dec 2023 18:21:02 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Content-Length: 272
+{&quot;life_span&quot;:&quot;11 years&quot;,&quot;temperament&quot;:&quot;Wild, Hardworking, Dutiful&quot;,&quot;origin&quot;:&quot;&quot;,&quot;name&quot;:&quot;African Hunting Dog&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;20 - 30&quot;,&quot;imperial&quot;:&quot;44 - 66&quot;},&quot;bred_for&quot;:&quot;A wild pack animal&quot;,&quot;id&quot;:3,&quot;reference_image_id&quot;:&quot;rkiByec47&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;76&quot;,&quot;imperial&quot;:&quot;30&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:17]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:17]</span>
+                <span class="scenario-name">Deve pegar detalhes de uma raca na posicao 9</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>343</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:17]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://api.thedogapi.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:21:02.371 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/v1/breeds/9&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">341</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">15:21:02.378 request:
+1 &gt; GET https://api.thedogapi.com/v1/breeds/9
+1 &gt; Host: api.thedogapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:21:02.714 response time in milliseconds: 334
+1 &lt; 200
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; vary: Origin
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-response-time: 1ms
+1 &lt; X-Cloud-Trace-Context: 7a19289cc7bf24b14feba7621f8aaf36
+1 &lt; Date: Sat, 02 Dec 2023 18:21:03 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Content-Length: 346
+{&quot;life_span&quot;:&quot;12 - 15 years&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;temperament&quot;:&quot;Friendly, Affectionate, Devoted, Loyal, Dignified, Playful&quot;,&quot;name&quot;:&quot;Alaskan Malamute&quot;,&quot;weight&quot;:{&quot;metric&quot;:&quot;29 - 45&quot;,&quot;imperial&quot;:&quot;65 - 100&quot;},&quot;bred_for&quot;:&quot;Hauling heavy freight, Sled pulling&quot;,&quot;id&quot;:9,&quot;reference_image_id&quot;:&quot;dW5UucTIW&quot;,&quot;height&quot;:{&quot;metric&quot;:&quot;58 - 64&quot;,&quot;imperial&quot;:&quot;23 - 25&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:22]</span>
+                <span class="scenario-name">Deve pegar de cachorros imagens no caminho /images/search</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>367</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:22]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://api.thedogapi.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:21:02.733 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/v1/images/search&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">366</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">15:21:02.738 request:
+1 &gt; GET https://api.thedogapi.com/v1/images/search
+1 &gt; Host: api.thedogapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:21:03.100 response time in milliseconds: 360
+1 &lt; 200
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; vary: Origin
+1 &lt; expires: Tue, 03 Jul 2001 06:00:00 GMT
+1 &lt; last-modified: Sat Dec 02 2023 18:21:03 GMT+0000 (Coordinated Universal Time)
+1 &lt; cache-control: post-check=0, pre-check=0
+1 &lt; authenticated: false
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-response-time: 1ms
+1 &lt; X-Cloud-Trace-Context: bffafce10bb20590cf4107c337dc0ccd
+1 &lt; Date: Sat, 02 Dec 2023 18:21:03 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Content-Length: 103
+[{&quot;width&quot;:4032,&quot;id&quot;:&quot;rfrTHiqbR&quot;,&quot;url&quot;:&quot;https:\/\/cdn2.thedogapi.com\/images\/rfrTHiqbR.jpg&quot;,&quot;height&quot;:3024}]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:27]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:27]</span>
+                <span class="scenario-name">Deve buscar uma versao inexistente da api</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>352</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:27]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://api.thedogapi.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:21:03.120 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/v3/breeds/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">351</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">15:21:03.127 request:
+1 &gt; GET https://api.thedogapi.com/v3/breeds/
+1 &gt; Host: api.thedogapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:21:03.473 response time in milliseconds: 345
+1 &lt; 404
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; vary: Origin
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-response-time: 1ms
+1 &lt; X-Cloud-Trace-Context: f707d2f376feb1d9d613062633830116
+1 &lt; Date: Sat, 02 Dec 2023 18:21:03 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Content-Length: 105
+{&quot;message&quot;:&quot;404 - please consult the documentation for correct url to call. https:\/\/docs.thedogapi.com\/&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:32]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:32]</span>
+                <span class="scenario-name">Deve entar verificar se um caminho inválido retorna erro</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>361</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:32]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://api.thedogapi.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:21:03.490 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/v1/bread/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">359</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">15:21:03.496 request:
+1 &gt; GET https://api.thedogapi.com/v1/bread/
+1 &gt; Host: api.thedogapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:21:03.851 response time in milliseconds: 354
+1 &lt; 404
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; vary: Origin
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-response-time: 0ms
+1 &lt; X-Cloud-Trace-Context: a29a16ef75bac4e3a2cf3a3313d311d4
+1 &lt; Date: Sat, 02 Dec 2023 18:21:04 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Content-Length: 105
+{&quot;message&quot;:&quot;404 - please consult the documentation for correct url to call. https:\/\/docs.thedogapi.com\/&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
